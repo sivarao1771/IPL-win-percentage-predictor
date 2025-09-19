@@ -92,8 +92,8 @@ The core of this application is the ensemble of three machine learning models tr
 
 The final prediction is a weighted average of the outputs from these three models. The weights were assigned based on their respective accuracies during testing in the notebook:
 
-* **Random Forest**: 45% weight (Accuracy: ~98%)
-* **ANN**: 45% weight (Accuracy: ~98%)
-* **Logistic Regression**: 10% weight (Accuracy: ~80%)
+* **Random Forest**: 45% weight (Accuracy: 97.85%)
+* **ANN**: 45% weight (Accuracy: 96.75%)
+* **Logistic Regression**: 10% weight (Accuracy: 80.06%)
 
 This approach ensures that the more accurate models have a greater influence on the final outcome, leading to a more reliable prediction.
