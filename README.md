@@ -9,7 +9,7 @@ The application features a dynamic and interactive 3D frontend that communicates
 * **Real-Time Prediction**: Enter the current match situation (target score, current score, overs completed, wickets down) to get an instant win probability.
 * **Ensemble Model**: The prediction is not based on a single model but on a weighted average of three different models (Random Forest, Artificial Neural Network, and Logistic Regression) for higher accuracy and robustness.
 * **Individual Model Breakdown**: The interface shows the individual prediction from each model, providing insight into how the final weighted average is calculated.
-* **Interactive 3D Frontend**: A visually appealing user interface built with Three.js, featuring an animated 3D background and a responsive "glassmorphism" design.
+* **Interactive 3D Frontend**: A visually appealing user interface built with Three.js, featuring an animated 3D background.
 * **Full-Stack Architecture**: A clear separation between the frontend (HTML/CSS/JS) and the backend (Python/Flask), making the project scalable and maintainable.
 
 ## Tech Stack
@@ -39,6 +39,12 @@ The project directory is organized as follows:
 IPL WIN predictor/
 ├── templates/
 │   └── index.html         # The main HTML file for the frontend
+├── static/
+│   ├── css/
+│   │   └── styles.css       (CSS styles)
+│   └── js/
+│       ├── background3d.js  (3D background)
+│       └── app.js           (Main application)
 ├── app.py                 # The Python Flask server (backend logic)
 ├── requirements.txt       # A list of all required Python libraries
 ├── Procfile               # Command for the deployment service (Render)
@@ -55,7 +61,7 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone [https://github.com/your-username/IPL-win-percentage-predictor.git](https://github.com/your-username/IPL-win-percentage-predictor.git)
+    git clone [https://github.com/sivarao1771/IPL-win-percentage-predictor.git](https://github.com/sivarao1771/IPL-win-percentage-predictor.git)
     cd IPL-win-percentage-predictor
     ```
 
