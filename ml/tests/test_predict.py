@@ -212,7 +212,10 @@ def test_cli_reports_invalid_input_with_exit_code_2():
     result = run_cli("--target", "301", "--score", "95.5", "--balls", "66", "--wickets", "10")
     assert result.returncode == INVALID_INPUT_EXIT_CODE
     assert result.stdout == ""
-    assert result.stderr.splitlines() == [
+    # Compare only our error lines: on some machines onnxruntime itself prints a
+    # hardware warning to stderr when it starts, which is not part of the CLI's output.
+    errors = [line for line in result.stderr.splitlines() if line.startswith("error: ")]
+    assert errors == [
         "error: target must be between 1 and 300",
         "error: score must be an integer",
         "error: wicketsLost must be between 0 and 9",

@@ -28,6 +28,10 @@ from features import FEATURE_COLUMNS, compute_features
 ARTIFACTS_DIR = Path(__file__).resolve().parent / "artifacts"
 INVALID_INPUT_EXIT_CODE = 2
 
+# Show only onnxruntime errors. On some Linux machines it warns about hardware
+# it can't identify while looking for GPUs, which would clutter the CLI output.
+rt.set_default_logger_severity(3)
+
 
 class InvalidInputError(ValueError):
     """Raised with every problem found in the input, not just the first."""
