@@ -1,0 +1,57 @@
+match_id,date,season,inn1_team,inn1_opponent,match_won_by,inn1_runs,inn1_balls,inn1_wickets,inn1_last_over,inn1_last_ball_dismissal,inn1_completion,chase_runs,chase_balls,chase_wickets,chase_last_over,chase_last_ball_dismissal,chase_completion,chase_team,target,reason
+336010,2008-05-08,2008,Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,129,96,7,15,False,,124.0,96.0,4.0,15.0,False,,Royal Challengers Bengaluru,130.0,reduced_first_innings
+336022,2008-05-17,2008,Delhi Capitals,Punjab Kings,Punjab Kings,118,66,4,10,False,,94.0,48.0,3.0,7.0,False,target_reached,Punjab Kings,89.0,dl_method
+336025,2008-05-18,2008,Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,149,120,5,19,False,full_overs,55.0,48.0,0.0,7.0,False,target_reached,Chennai Super Kings,53.0,dl_method
+392183,2009-04-19,2009,Punjab Kings,Delhi Capitals,Delhi Capitals,104,72,7,11,True,,58.0,29.0,0.0,4.0,False,target_reached,Delhi Capitals,54.0,dl_method
+392186,2009-04-21,2009,Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,158,120,6,19,False,full_overs,79.0,56.0,1.0,9.0,False,target_reached,Kolkata Knight Riders,69.0,dl_method
+392190,2009-04-23,2009,Rajasthan Royals,Kolkata Knight Riders,Unknown,150,120,6,19,False,full_overs,150.0,120.0,8.0,19.0,True,full_overs,Kolkata Knight Riders,151.0,tie
+392214,2009-05-07,2009,Chennai Super Kings,Punjab Kings,Chennai Super Kings,185,108,3,17,False,,174.0,108.0,3.0,17.0,False,,Punjab Kings,187.0,dl_method
+419121,2010-03-21,2010,Punjab Kings,Chennai Super Kings,Unknown,136,120,8,19,False,full_overs,136.0,120.0,7.0,19.0,True,full_overs,Chennai Super Kings,137.0,tie
+501215,2011-04-18,2011,Chennai Super Kings,Kochi Tuskers Kerala,Kochi Tuskers Kerala,131,102,4,16,False,,135.0,90.0,3.0,14.0,False,target_reached,Kochi Tuskers Kerala,135.0,dl_method
+501245,2011-05-07,2011,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,114,120,4,19,True,full_overs,61.0,60.0,2.0,9.0,False,target_reached,Kolkata Knight Riders,52.0,dl_method
+501255,2011-05-14,2011,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,89,78,4,12,False,,105.0,74.0,6.0,12.0,False,target_reached,Royal Challengers Bengaluru,102.0,dl_method
+501265,2011-05-21,2011,Delhi Capitals,Pune Warriors,Unknown,56,61,3,10,False,,,,,,,,,,no_result
+598004,2013-04-07,2013,Royal Challengers Bengaluru,Sunrisers Hyderabad,Unknown,130,120,8,19,False,full_overs,130.0,120.0,7.0,19.0,False,full_overs,Sunrisers Hyderabad,131.0,tie
+598017,2013-04-16,2013,Delhi Capitals,Royal Challengers Bengaluru,Unknown,152,120,5,19,False,full_overs,152.0,120.0,7.0,19.0,False,full_overs,Royal Challengers Bengaluru,153.0,tie
+598068,2013-05-18,2013,Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,106,48,2,7,False,,82.0,48.0,6.0,7.0,True,,Chennai Super Kings,107.0,reduced_first_innings
+729315,2014-04-29,2014,Rajasthan Royals,Kolkata Knight Riders,Unknown,152,120,5,19,False,full_overs,152.0,120.0,8.0,19.0,False,full_overs,Kolkata Knight Riders,153.0,tie
+733971,2014-05-02,2014,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,148,102,3,16,False,,114.0,102.0,9.0,16.0,False,,Kolkata Knight Riders,149.0,reduced_first_innings
+733993,2014-05-10,2014,Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,143,120,7,19,True,full_overs,44.0,26.0,2.0,4.0,False,target_reached,Sunrisers Hyderabad,43.0,dl_method
+829741,2015-04-21,2015,Rajasthan Royals,Punjab Kings,Unknown,191,120,6,19,False,full_overs,191.0,120.0,6.0,19.0,False,full_overs,Punjab Kings,192.0,tie
+829743,2015-04-22,2015,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,176,120,4,19,False,full_overs,101.0,72.0,4.0,11.0,False,,Kolkata Knight Riders,118.0,dl_method
+829763,2015-04-29,2015,Royal Challengers Bengaluru,Rajasthan Royals,Unknown,200,120,7,19,True,full_overs,,,,,,,,,no_result
+829771,2015-05-02,2015,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,111,60,4,9,False,,115.0,58.0,3.0,9.0,False,target_reached,Royal Challengers Bengaluru,112.0,reduced_first_innings
+829803,2015-05-13,2015,Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,106,60,6,9,False,,84.0,60.0,6.0,9.0,False,,Royal Challengers Bengaluru,107.0,reduced_first_innings
+829807,2015-05-15,2015,Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,135,66,3,10,True,,83.0,35.0,4.0,5.0,False,target_reached,Royal Challengers Bengaluru,81.0,dl_method
+829813,2015-05-17,2015,Delhi Capitals,Royal Challengers Bengaluru,Unknown,187,120,5,19,False,full_overs,2.0,7.0,0.0,1.0,False,,Royal Challengers Bengaluru,188.0,no_result
+980943,2016-04-26,2016,Sunrisers Hyderabad,Rising Pune Supergiants,Rising Pune Supergiants,118,120,8,19,False,full_overs,94.0,66.0,3.0,10.0,True,target_reached,Rising Pune Supergiants,61.0,dl_method
+980989,2016-05-14,2016,Rising Pune Supergiants,Kolkata Knight Riders,Kolkata Knight Riders,103,106,6,17,False,,66.0,30.0,2.0,4.0,False,target_reached,Kolkata Knight Riders,66.0,dl_method
+980997,2016-05-17,2016,Delhi Capitals,Rising Pune Supergiants,Rising Pune Supergiants,121,120,6,19,False,full_overs,76.0,66.0,1.0,10.0,False,target_reached,Rising Pune Supergiants,58.0,dl_method
+980999,2016-05-18,2016,Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,211,90,3,14,False,,120.0,84.0,9.0,13.0,False,,Punjab Kings,203.0,dl_method
+1082625,2017-04-29,2017,Gujarat Lions,Mumbai Indians,Unknown,153,120,9,19,False,full_overs,153.0,120.0,10.0,19.0,True,full_overs,Mumbai Indians,154.0,tie
+1082648,2017-05-17,2017,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,128,120,7,19,True,full_overs,48.0,32.0,3.0,5.0,False,target_reached,Kolkata Knight Riders,48.0,dl_method
+1136566,2018-04-11,2018,Rajasthan Royals,Delhi Capitals,Rajasthan Royals,153,107,5,17,False,,60.0,36.0,4.0,5.0,False,,Delhi Capitals,71.0,dl_method
+1136578,2018-04-21,2018,Kolkata Knight Riders,Punjab Kings,Punjab Kings,191,120,7,19,False,full_overs,126.0,67.0,1.0,11.0,False,target_reached,Punjab Kings,125.0,dl_method
+1136592,2018-05-02,2018,Delhi Capitals,Rajasthan Royals,Delhi Capitals,196,103,6,17,True,,146.0,72.0,5.0,11.0,False,,Rajasthan Royals,151.0,dl_method
+1175365,2019-03-30,2019,Kolkata Knight Riders,Delhi Capitals,Unknown,185,120,8,19,True,full_overs,185.0,120.0,6.0,19.0,True,full_overs,Delhi Capitals,186.0,tie
+1178424,2019-04-30,2019,Royal Challengers Bengaluru,Rajasthan Royals,Unknown,62,30,7,4,False,,41.0,20.0,1.0,3.0,True,,Rajasthan Royals,63.0,no_result
+1178426,2019-05-02,2019,Mumbai Indians,Sunrisers Hyderabad,Unknown,162,120,5,19,False,full_overs,162.0,120.0,6.0,19.0,False,full_overs,Sunrisers Hyderabad,163.0,tie
+1216493,2020-09-20,2020,Delhi Capitals,Punjab Kings,Unknown,157,120,8,19,False,full_overs,157.0,120.0,8.0,19.0,True,full_overs,Punjab Kings,158.0,tie
+1216512,2020-10-18,2020,Kolkata Knight Riders,Sunrisers Hyderabad,Unknown,163,120,5,19,True,full_overs,163.0,120.0,6.0,19.0,False,full_overs,Sunrisers Hyderabad,164.0,tie
+1216517,2020-10-18,2020,Mumbai Indians,Punjab Kings,Unknown,176,120,6,19,False,full_overs,176.0,120.0,6.0,19.0,True,full_overs,Punjab Kings,177.0,tie
+1216547,2020-09-28,2020,Royal Challengers Bengaluru,Mumbai Indians,Unknown,201,120,3,19,False,full_overs,201.0,120.0,5.0,19.0,False,full_overs,Mumbai Indians,202.0,tie
+1254077,2021-04-25,2021,Delhi Capitals,Sunrisers Hyderabad,Unknown,159,120,4,19,False,full_overs,159.0,120.0,7.0,19.0,False,full_overs,Sunrisers Hyderabad,160.0,tie
+1359476,2023-04-01,2023,Punjab Kings,Kolkata Knight Riders,Punjab Kings,191,120,5,19,False,full_overs,146.0,96.0,7.0,15.0,False,,Kolkata Knight Riders,154.0,dl_method
+1359519,2023-05-03,2023,Lucknow Super Giants,Chennai Super Kings,Unknown,125,116,7,19,True,final_over_glitch,,,,,,,,,no_result
+1370353,2023-05-29,2023,Gujarat Titans,Chennai Super Kings,Chennai Super Kings,214,120,4,19,True,full_overs,171.0,90.0,5.0,14.0,False,target_reached,Chennai Super Kings,171.0,dl_method
+1426298,2024-05-11,2024,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,157,96,7,15,False,,139.0,96.0,8.0,15.0,False,,Mumbai Indians,158.0,reduced_first_innings
+1473469,2025-04-16,2025,Delhi Capitals,Rajasthan Royals,Unknown,188,120,5,19,False,full_overs,188.0,120.0,4.0,19.0,True,full_overs,Rajasthan Royals,189.0,tie
+1473471,2025-04-18,2025,Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,95,84,9,13,False,,98.0,73.0,5.0,12.0,False,target_reached,Punjab Kings,96.0,reduced_first_innings
+1473481,2025-04-26,2025,Punjab Kings,Kolkata Knight Riders,Unknown,201,120,4,19,False,full_overs,7.0,6.0,0.0,0.0,False,,Kolkata Knight Riders,202.0,no_result
+1473492,2025-05-05,2025,Delhi Capitals,Sunrisers Hyderabad,Unknown,133,120,7,19,False,full_overs,,,,,,,,,no_result
+1473493,2025-05-06,2025,Mumbai Indians,Gujarat Titans,Gujarat Titans,155,120,8,19,False,full_overs,147.0,114.0,7.0,18.0,False,target_reached,Gujarat Titans,147.0,dl_method
+1473495,2025-05-08,2025,Punjab Kings,Delhi Capitals,Unknown,122,61,1,10,True,,,,,,,,,,no_result
+1527685,2026-04-06,2026,Kolkata Knight Riders,Punjab Kings,Unknown,25,22,2,3,False,,,,,,,,,,no_result
+1527686,2026-04-07,2026,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,150,66,3,10,False,,123.0,66.0,9.0,10.0,False,,Mumbai Indians,151.0,reduced_first_innings
+1529281,2026-04-26,2026,Kolkata Knight Riders,Lucknow Super Giants,Unknown,155,120,7,19,False,full_overs,155.0,120.0,8.0,19.0,False,full_overs,Lucknow Super Giants,156.0,tie
+1529293,2026-05-07,2026,Lucknow Super Giants,Royal Challengers Bengaluru,Lucknow Super Giants,209,114,3,18,False,,203.0,114.0,6.0,18.0,False,,Royal Challengers Bengaluru,213.0,dl_method

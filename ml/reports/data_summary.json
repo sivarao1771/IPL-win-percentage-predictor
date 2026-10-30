@@ -1,0 +1,191 @@
+{
+  "dataset": {
+    "file": "IPL.csv",
+    "sha256": "425c40c4eb60f06ca2eb05f27bf84bdd737b7c3a008afbf44d49619e0d1a72b5",
+    "rows": 295732,
+    "matches": 1243,
+    "first_date": "2008-04-18",
+    "last_date": "2026-05-31"
+  },
+  "excluded_matches": {
+    "dl_method": {
+      "count": 23,
+      "match_ids": [
+        336022,
+        336025,
+        392183,
+        392186,
+        392214,
+        501215,
+        501245,
+        501255,
+        733993,
+        829743,
+        829807,
+        980943,
+        980989,
+        980997,
+        980999,
+        1082648,
+        1136566,
+        1136578,
+        1136592,
+        1359476,
+        1370353,
+        1473493,
+        1529293
+      ]
+    },
+    "no_result": {
+      "count": 9,
+      "match_ids": [
+        501265,
+        829763,
+        829813,
+        1178424,
+        1359519,
+        1473481,
+        1473492,
+        1473495,
+        1527685
+      ]
+    },
+    "reduced_first_innings": {
+      "count": 8,
+      "match_ids": [
+        336010,
+        598068,
+        733971,
+        829771,
+        829803,
+        1426298,
+        1473471,
+        1527686
+      ]
+    },
+    "tie": {
+      "count": 16,
+      "match_ids": [
+        392190,
+        419121,
+        598004,
+        598017,
+        729315,
+        829741,
+        1082625,
+        1175365,
+        1178426,
+        1216493,
+        1216512,
+        1216517,
+        1216547,
+        1254077,
+        1473469,
+        1529281
+      ]
+    }
+  },
+  "matches_kept": 1187,
+  "kept_with_notes": {
+    "final_over_glitch": {
+      "note": "All 20 overs were bowled (last delivery in the 20th over), but the data counts fewer than 120 legal balls and fewer than 10 wickets. Kept.",
+      "matches": [
+        {
+          "match_id": 335987,
+          "date": "2008-04-21",
+          "teams": "Punjab Kings v Rajasthan Royals",
+          "innings": [
+            "inn1"
+          ],
+          "inn1": "166/8 in 119 balls",
+          "chase": "168.0/4.0 in 109.0 balls (target 167)"
+        },
+        {
+          "match_id": 501202,
+          "date": "2011-04-10",
+          "teams": "Punjab Kings v Pune Warriors",
+          "innings": [
+            "inn1"
+          ],
+          "inn1": "112/8 in 119 balls",
+          "chase": "113.0/3.0 in 79.0 balls (target 113)"
+        }
+      ]
+    },
+    "nine_down_dismissal": {
+      "note": "Innings ended on a dismissal with 9 wickets down before the 20th over: all out with one batter unable to bat. Kept only because of this rule; listed for manual checking.",
+      "matches": [
+        {
+          "match_id": 336012,
+          "date": "2008-05-28",
+          "teams": "Royal Challengers Bengaluru v Mumbai Indians",
+          "innings": [
+            "inn1"
+          ],
+          "inn1": "122/9 in 108 balls",
+          "chase": "126.0/1.0 in 96.0 balls (target 123)"
+        },
+        {
+          "match_id": 392197,
+          "date": "2009-04-27",
+          "teams": "Mumbai Indians v Kolkata Knight Riders",
+          "innings": [
+            "chase"
+          ],
+          "inn1": "187/6 in 120 balls",
+          "chase": "95.0/9.0 in 92.0 balls (target 188)"
+        },
+        {
+          "match_id": 419114,
+          "date": "2010-03-17",
+          "teams": "Mumbai Indians v Delhi Capitals",
+          "innings": [
+            "chase"
+          ],
+          "inn1": "218/7 in 120 balls",
+          "chase": "120.0/9.0 in 99.0 balls (target 219)"
+        },
+        {
+          "match_id": 548307,
+          "date": "2012-04-05",
+          "teams": "Kolkata Knight Riders v Delhi Capitals",
+          "innings": [
+            "inn1"
+          ],
+          "inn1": "97/9 in 72 balls",
+          "chase": "100.0/2.0 in 67.0 balls (target 98)"
+        },
+        {
+          "match_id": 729293,
+          "date": "2014-04-21",
+          "teams": "Chennai Super Kings v Delhi Capitals",
+          "innings": [
+            "chase"
+          ],
+          "inn1": "177/7 in 120 balls",
+          "chase": "84.0/9.0 in 94.0 balls (target 178)"
+        }
+      ]
+    }
+  },
+  "splits": {
+    "train": {
+      "seasons": "2008-2023",
+      "matches": 979,
+      "rows": 114041,
+      "chase_win_rate_by_match": 0.5434
+    },
+    "val": {
+      "seasons": "2024-2024",
+      "matches": 70,
+      "rows": 8108,
+      "chase_win_rate_by_match": 0.5143
+    },
+    "test": {
+      "seasons": "2025-2026",
+      "matches": 138,
+      "rows": 15914,
+      "chase_win_rate_by_match": 0.5797
+    }
+  }
+}

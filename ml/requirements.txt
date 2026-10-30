@@ -1,0 +1,4 @@
+# Python 3.11. Exact versions so results can be reproduced.
+numpy==2.4.6
+pandas==3.1.0
+pytest==9.2.0
