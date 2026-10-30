@@ -1,4 +1,14 @@
 # Python 3.11. Exact versions so results can be reproduced.
+# protobuf is held below 7: protobuf 7 rejects booleans in ONNX integer
+# attributes, which breaks skl2onnx's export of tree models.
+joblib==1.6.0
 numpy==2.4.6
+onnx==1.23.2
+onnxruntime==1.31.1
 pandas==3.1.0
+protobuf==6.33.6
 pytest==9.2.0
+scikit-learn==1.9.1
+scipy==1.17.1
+skl2onnx==1.20.0
+threadpoolctl==3.7.0

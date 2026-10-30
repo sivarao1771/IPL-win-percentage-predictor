@@ -38,6 +38,17 @@ TEAM_RENAMES = {
 }
 CITY_RENAMES = {"Bangalore": "Bengaluru"}
 
+# Shortened matches the automatic rules can't detect: the first innings ended on
+# a 9th-wicket dismissal exactly at the reduced overs limit, so it looks like an
+# all-out. Each entry was checked by hand.
+MANUAL_EXCLUSIONS = {
+    336012: "Reduced to 18 overs a side before play (scorecard: "
+            "https://espncricinfo.com/ci/engine/match/336012.html). "
+            "RCB 122/9 ended at exactly 18.0 overs.",
+    548307: "12-over match: KKR 97/9 ended on a run-out at exactly 12.0 overs and the "
+            "chase finished at 11.1 overs, both inside a 12-over limit.",
+}
+
 # Inclusive season ranges. The test seasons are only looked at once, at the end.
 SPLITS = {"train": (2008, 2023), "val": (2024, 2024), "test": (2025, 2026)}
 
@@ -125,6 +136,8 @@ def exclusion_reason(m):
         return "tie"
     if m["method"] == "D/L":
         return "dl_method"
+    if m.name in MANUAL_EXCLUSIONS:
+        return "manual_reduced_overs"
     if pd.isna(m["inn1_balls"]):
         return "no_first_innings"
     if pd.isna(m["chase_balls"]):
@@ -232,6 +245,7 @@ def main():
             reason: {"count": int(len(group)), "match_ids": [int(i) for i in group.index]}
             for reason, group in excluded.groupby("reason")
         },
+        "manual_exclusions": {str(k): v for k, v in MANUAL_EXCLUSIONS.items()},
         "matches_kept": int(len(kept_ids)),
         "kept_with_notes": {
             "final_over_glitch": {

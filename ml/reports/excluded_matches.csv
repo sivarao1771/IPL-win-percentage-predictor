@@ -1,5 +1,6 @@
 match_id,date,season,inn1_team,inn1_opponent,match_won_by,inn1_runs,inn1_balls,inn1_wickets,inn1_last_over,inn1_last_ball_dismissal,inn1_completion,chase_runs,chase_balls,chase_wickets,chase_last_over,chase_last_ball_dismissal,chase_completion,chase_team,target,reason
 336010,2008-05-08,2008,Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,129,96,7,15,False,,124.0,96.0,4.0,15.0,False,,Royal Challengers Bengaluru,130.0,reduced_first_innings
+336012,2008-05-28,2008,Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,122,108,9,17,True,nine_down_dismissal,126.0,96.0,1.0,15.0,False,target_reached,Mumbai Indians,123.0,manual_reduced_overs
 336022,2008-05-17,2008,Delhi Capitals,Punjab Kings,Punjab Kings,118,66,4,10,False,,94.0,48.0,3.0,7.0,False,target_reached,Punjab Kings,89.0,dl_method
 336025,2008-05-18,2008,Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,149,120,5,19,False,full_overs,55.0,48.0,0.0,7.0,False,target_reached,Chennai Super Kings,53.0,dl_method
 392183,2009-04-19,2009,Punjab Kings,Delhi Capitals,Delhi Capitals,104,72,7,11,True,,58.0,29.0,0.0,4.0,False,target_reached,Delhi Capitals,54.0,dl_method
@@ -11,6 +12,7 @@ match_id,date,season,inn1_team,inn1_opponent,match_won_by,inn1_runs,inn1_balls,i
 501245,2011-05-07,2011,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,114,120,4,19,True,full_overs,61.0,60.0,2.0,9.0,False,target_reached,Kolkata Knight Riders,52.0,dl_method
 501255,2011-05-14,2011,Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,89,78,4,12,False,,105.0,74.0,6.0,12.0,False,target_reached,Royal Challengers Bengaluru,102.0,dl_method
 501265,2011-05-21,2011,Delhi Capitals,Pune Warriors,Unknown,56,61,3,10,False,,,,,,,,,,no_result
+548307,2012-04-05,2012,Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,97,72,9,11,True,nine_down_dismissal,100.0,67.0,2.0,11.0,False,target_reached,Delhi Capitals,98.0,manual_reduced_overs
 598004,2013-04-07,2013,Royal Challengers Bengaluru,Sunrisers Hyderabad,Unknown,130,120,8,19,False,full_overs,130.0,120.0,7.0,19.0,False,full_overs,Sunrisers Hyderabad,131.0,tie
 598017,2013-04-16,2013,Delhi Capitals,Royal Challengers Bengaluru,Unknown,152,120,5,19,False,full_overs,152.0,120.0,7.0,19.0,False,full_overs,Royal Challengers Bengaluru,153.0,tie
 598068,2013-05-18,2013,Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,106,48,2,7,False,,82.0,48.0,6.0,7.0,True,,Chennai Super Kings,107.0,reduced_first_innings

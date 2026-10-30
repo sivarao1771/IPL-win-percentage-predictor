@@ -8,7 +8,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from features import compute_features, phase_of  # noqa: E402
 from prepare_data import (  # noqa: E402
-    SPLITS, build_states, exclusion_reason, kept_by_rule, match_outline, split_by_season, validate,
+    MANUAL_EXCLUSIONS, SPLITS, build_states, exclusion_reason, kept_by_rule, match_outline,
+    split_by_season, validate,
 )
 
 HOME, AWAY = "Mumbai Indians", "Chennai Super Kings"
@@ -132,6 +133,13 @@ def test_nine_down_in_final_over_is_not_a_glitch():
     assert outline.loc[1, "chase_completion"] == "final_over_nine_down"
     assert kept_by_rule(outline, "final_over_glitch") == []
     assert kept_by_rule(outline, "nine_down_dismissal") == []
+
+
+def test_manual_exclusion_overrides_nine_down_rule():
+    # Looks like a 9-down all-out (kept by the rules), but it is on the manual list.
+    match_id = next(iter(MANUAL_EXCLUSIONS))
+    df = make_match(match_id, AWAY, inn1_balls=72, inn1_wickets_at=range(64, 73), chase_balls=37)
+    assert reasons(df) == {match_id: "manual_reduced_overs"}
 
 
 def test_lost_chase_after_full_overs_is_kept():
