@@ -1,0 +1,3605 @@
+{
+  "tolerance": 1e-05,
+  "cases": [
+    {
+      "description": "before the first ball",
+      "input": {
+        "target": 180,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 180.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 180.0,
+        "crr": 0.0,
+        "rrr": 9.0
+      },
+      "winProbability": 0.5170934796333313
+    },
+    {
+      "description": "one ball left",
+      "input": {
+        "target": 160,
+        "score": 155,
+        "ballsBowled": 119,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 5.0,
+        "balls_left": 1.0,
+        "wickets_left": 6.0,
+        "runs_target": 160.0,
+        "crr": 7.815126050420168,
+        "rrr": 30.0
+      },
+      "winProbability": 0.15761041641235352
+    },
+    {
+      "description": "one wicket left",
+      "input": {
+        "target": 170,
+        "score": 120,
+        "ballsBowled": 90,
+        "wicketsLost": 9
+      },
+      "features": {
+        "runs_left": 50.0,
+        "balls_left": 30.0,
+        "wickets_left": 1.0,
+        "runs_target": 170.0,
+        "crr": 8.0,
+        "rrr": 10.0
+      },
+      "winProbability": 0.18177515268325806
+    },
+    {
+      "description": "one run needed",
+      "input": {
+        "target": 150,
+        "score": 149,
+        "ballsBowled": 100,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 1.0,
+        "balls_left": 20.0,
+        "wickets_left": 4.0,
+        "runs_target": 150.0,
+        "crr": 8.94,
+        "rrr": 0.3
+      },
+      "winProbability": 0.9868515133857727
+    },
+    {
+      "description": "effectively impossible: 100 needed off 6 balls",
+      "input": {
+        "target": 200,
+        "score": 100,
+        "ballsBowled": 114,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 100.0,
+        "balls_left": 6.0,
+        "wickets_left": 7.0,
+        "runs_target": 200.0,
+        "crr": 5.2631578947368425,
+        "rrr": 100.0
+      },
+      "winProbability": 0.04828763008117676
+    },
+    {
+      "description": "very easy: 1 needed off 60 balls, no wickets lost",
+      "input": {
+        "target": 120,
+        "score": 119,
+        "ballsBowled": 60,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 1.0,
+        "balls_left": 60.0,
+        "wickets_left": 10.0,
+        "runs_target": 120.0,
+        "crr": 11.9,
+        "rrr": 0.1
+      },
+      "winProbability": 0.9860033392906189
+    },
+    {
+      "description": "highest allowed target, before the first ball",
+      "input": {
+        "target": 300,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 300.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 300.0,
+        "crr": 0.0,
+        "rrr": 15.0
+      },
+      "winProbability": 0.041685283184051514
+    },
+    {
+      "description": "lowest allowed target",
+      "input": {
+        "target": 1,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 1.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 1.0,
+        "crr": 0.0,
+        "rrr": 0.05
+      },
+      "winProbability": 0.9959958791732788
+    },
+    {
+      "description": "last ball, last wicket, 6 needed",
+      "input": {
+        "target": 175,
+        "score": 169,
+        "ballsBowled": 119,
+        "wicketsLost": 9
+      },
+      "features": {
+        "runs_left": 6.0,
+        "balls_left": 1.0,
+        "wickets_left": 1.0,
+        "runs_target": 175.0,
+        "crr": 8.521008403361344,
+        "rrr": 36.0
+      },
+      "winProbability": 0.042367398738861084
+    },
+    {
+      "description": "everything at its maximum",
+      "input": {
+        "target": 300,
+        "score": 299,
+        "ballsBowled": 119,
+        "wicketsLost": 9
+      },
+      "features": {
+        "runs_left": 1.0,
+        "balls_left": 1.0,
+        "wickets_left": 1.0,
+        "runs_target": 300.0,
+        "crr": 15.07563025210084,
+        "rrr": 6.0
+      },
+      "winProbability": 0.796285092830658
+    },
+    {
+      "description": "test row: match 1529290",
+      "input": {
+        "target": 229,
+        "score": 176,
+        "ballsBowled": 82,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 53.0,
+        "balls_left": 38.0,
+        "wickets_left": 9.0,
+        "runs_target": 229.0,
+        "crr": 12.878048780487806,
+        "rrr": 8.368421052631579
+      },
+      "winProbability": 0.43109387159347534
+    },
+    {
+      "description": "test row: match 1527676",
+      "input": {
+        "target": 128,
+        "score": 39,
+        "ballsBowled": 20,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 89.0,
+        "balls_left": 100.0,
+        "wickets_left": 10.0,
+        "runs_target": 128.0,
+        "crr": 11.7,
+        "rrr": 5.34
+      },
+      "winProbability": 0.9423748254776001
+    },
+    {
+      "description": "test row: match 1473503",
+      "input": {
+        "target": 232,
+        "score": 116,
+        "ballsBowled": 58,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 116.0,
+        "balls_left": 62.0,
+        "wickets_left": 9.0,
+        "runs_target": 232.0,
+        "crr": 12.0,
+        "rrr": 11.225806451612904
+      },
+      "winProbability": 0.08819478750228882
+    },
+    {
+      "description": "test row: match 1529287",
+      "input": {
+        "target": 160,
+        "score": 17,
+        "ballsBowled": 13,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 143.0,
+        "balls_left": 107.0,
+        "wickets_left": 9.0,
+        "runs_target": 160.0,
+        "crr": 7.846153846153846,
+        "rrr": 8.018691588785046
+      },
+      "winProbability": 0.6373001933097839
+    },
+    {
+      "description": "test row: match 1473447",
+      "input": {
+        "target": 164,
+        "score": 39,
+        "ballsBowled": 25,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 125.0,
+        "balls_left": 95.0,
+        "wickets_left": 10.0,
+        "runs_target": 164.0,
+        "crr": 9.36,
+        "rrr": 7.894736842105263
+      },
+      "winProbability": 0.746989905834198
+    },
+    {
+      "description": "test row: match 1529294",
+      "input": {
+        "target": 143,
+        "score": 41,
+        "ballsBowled": 33,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 102.0,
+        "balls_left": 87.0,
+        "wickets_left": 8.0,
+        "runs_target": 143.0,
+        "crr": 7.454545454545454,
+        "rrr": 7.0344827586206895
+      },
+      "winProbability": 0.8183062672615051
+    },
+    {
+      "description": "test row: match 1473445",
+      "input": {
+        "target": 197,
+        "score": 99,
+        "ballsBowled": 92,
+        "wicketsLost": 7
+      },
+      "features": {
+        "runs_left": 98.0,
+        "balls_left": 28.0,
+        "wickets_left": 3.0,
+        "runs_target": 197.0,
+        "crr": 6.456521739130435,
+        "rrr": 21.0
+      },
+      "winProbability": 0.012551486492156982
+    },
+    {
+      "description": "test row: match 1473461",
+      "input": {
+        "target": 164,
+        "score": 85,
+        "ballsBowled": 74,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 79.0,
+        "balls_left": 46.0,
+        "wickets_left": 6.0,
+        "runs_target": 164.0,
+        "crr": 6.891891891891892,
+        "rrr": 10.304347826086957
+      },
+      "winProbability": 0.2952197194099426
+    },
+    {
+      "description": "test row: match 1473504",
+      "input": {
+        "target": 231,
+        "score": 45,
+        "ballsBowled": 43,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 186.0,
+        "balls_left": 77.0,
+        "wickets_left": 7.0,
+        "runs_target": 231.0,
+        "crr": 6.27906976744186,
+        "rrr": 14.493506493506494
+      },
+      "winProbability": 0.023249149322509766
+    },
+    {
+      "description": "test row: match 1529272",
+      "input": {
+        "target": 255,
+        "score": 99,
+        "ballsBowled": 57,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 156.0,
+        "balls_left": 63.0,
+        "wickets_left": 9.0,
+        "runs_target": 255.0,
+        "crr": 10.421052631578947,
+        "rrr": 14.857142857142858
+      },
+      "winProbability": 0.03547114133834839
+    },
+    {
+      "description": "test row: match 1527687",
+      "input": {
+        "target": 211,
+        "score": 125,
+        "ballsBowled": 76,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 86.0,
+        "balls_left": 44.0,
+        "wickets_left": 7.0,
+        "runs_target": 211.0,
+        "crr": 9.868421052631579,
+        "rrr": 11.727272727272727
+      },
+      "winProbability": 0.3079290986061096
+    },
+    {
+      "description": "test row: match 1527691",
+      "input": {
+        "target": 213,
+        "score": 52,
+        "ballsBowled": 25,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 161.0,
+        "balls_left": 95.0,
+        "wickets_left": 10.0,
+        "runs_target": 213.0,
+        "crr": 12.48,
+        "rrr": 10.16842105263158
+      },
+      "winProbability": 0.3374550938606262
+    },
+    {
+      "description": "test row: match 1473438",
+      "input": {
+        "target": 175,
+        "score": 75,
+        "ballsBowled": 31,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 100.0,
+        "balls_left": 89.0,
+        "wickets_left": 10.0,
+        "runs_target": 175.0,
+        "crr": 14.516129032258064,
+        "rrr": 6.741573033707865
+      },
+      "winProbability": 0.9039912223815918
+    },
+    {
+      "description": "test row: match 1473497",
+      "input": {
+        "target": 220,
+        "score": 94,
+        "ballsBowled": 42,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 126.0,
+        "balls_left": 78.0,
+        "wickets_left": 9.0,
+        "runs_target": 220.0,
+        "crr": 13.428571428571429,
+        "rrr": 9.692307692307692
+      },
+      "winProbability": 0.25163131952285767
+    },
+    {
+      "description": "test row: match 1473482",
+      "input": {
+        "target": 216,
+        "score": 18,
+        "ballsBowled": 12,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 198.0,
+        "balls_left": 108.0,
+        "wickets_left": 10.0,
+        "runs_target": 216.0,
+        "crr": 9.0,
+        "rrr": 11.0
+      },
+      "winProbability": 0.16599279642105103
+    },
+    {
+      "description": "test row: match 1473509",
+      "input": {
+        "target": 229,
+        "score": 197,
+        "ballsBowled": 111,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 32.0,
+        "balls_left": 9.0,
+        "wickets_left": 5.0,
+        "runs_target": 229.0,
+        "crr": 10.64864864864865,
+        "rrr": 21.333333333333332
+      },
+      "winProbability": 0.015218377113342285
+    },
+    {
+      "description": "test row: match 1473439",
+      "input": {
+        "target": 287,
+        "score": 29,
+        "ballsBowled": 15,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 258.0,
+        "balls_left": 105.0,
+        "wickets_left": 8.0,
+        "runs_target": 287.0,
+        "crr": 11.6,
+        "rrr": 14.742857142857142
+      },
+      "winProbability": 0.03344780206680298
+    },
+    {
+      "description": "test row: match 1529301",
+      "input": {
+        "target": 201,
+        "score": 13,
+        "ballsBowled": 12,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 188.0,
+        "balls_left": 108.0,
+        "wickets_left": 10.0,
+        "runs_target": 201.0,
+        "crr": 6.5,
+        "rrr": 10.444444444444445
+      },
+      "winProbability": 0.30900275707244873
+    },
+    {
+      "description": "test row: match 1473482",
+      "input": {
+        "target": 216,
+        "score": 64,
+        "ballsBowled": 38,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 152.0,
+        "balls_left": 82.0,
+        "wickets_left": 8.0,
+        "runs_target": 216.0,
+        "crr": 10.105263157894736,
+        "rrr": 11.121951219512194
+      },
+      "winProbability": 0.1190558671951294
+    },
+    {
+      "description": "test row: match 1473475",
+      "input": {
+        "target": 177,
+        "score": 171,
+        "ballsBowled": 93,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 6.0,
+        "balls_left": 27.0,
+        "wickets_left": 9.0,
+        "runs_target": 177.0,
+        "crr": 11.03225806451613,
+        "rrr": 1.3333333333333333
+      },
+      "winProbability": 0.9906768798828125
+    },
+    {
+      "description": "test row: match 1529291",
+      "input": {
+        "target": 156,
+        "score": 72,
+        "ballsBowled": 58,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 84.0,
+        "balls_left": 62.0,
+        "wickets_left": 8.0,
+        "runs_target": 156.0,
+        "crr": 7.448275862068965,
+        "rrr": 8.129032258064516
+      },
+      "winProbability": 0.7047104835510254
+    },
+    {
+      "description": "test row: match 1527689",
+      "input": {
+        "target": 202,
+        "score": 155,
+        "ballsBowled": 79,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 47.0,
+        "balls_left": 41.0,
+        "wickets_left": 6.0,
+        "runs_target": 202.0,
+        "crr": 11.772151898734178,
+        "rrr": 6.878048780487805
+      },
+      "winProbability": 0.9323623776435852
+    },
+    {
+      "description": "test row: match 1527675",
+      "input": {
+        "target": 221,
+        "score": 129,
+        "ballsBowled": 63,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 92.0,
+        "balls_left": 57.0,
+        "wickets_left": 10.0,
+        "runs_target": 221.0,
+        "crr": 12.285714285714286,
+        "rrr": 9.68421052631579
+      },
+      "winProbability": 0.31342560052871704
+    },
+    {
+      "description": "test row: match 1473510",
+      "input": {
+        "target": 204,
+        "score": 1,
+        "ballsBowled": 1,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 203.0,
+        "balls_left": 119.0,
+        "wickets_left": 10.0,
+        "runs_target": 204.0,
+        "crr": 6.0,
+        "rrr": 10.235294117647058
+      },
+      "winProbability": 0.3310495615005493
+    },
+    {
+      "description": "test row: match 1529266",
+      "input": {
+        "target": 147,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 147.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 147.0,
+        "crr": 0.0,
+        "rrr": 7.35
+      },
+      "winProbability": 0.7707197666168213
+    },
+    {
+      "description": "test row: match 1527682",
+      "input": {
+        "target": 211,
+        "score": 134,
+        "ballsBowled": 80,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 77.0,
+        "balls_left": 40.0,
+        "wickets_left": 5.0,
+        "runs_target": 211.0,
+        "crr": 10.05,
+        "rrr": 11.55
+      },
+      "winProbability": 0.25058823823928833
+    },
+    {
+      "description": "test row: match 1473473",
+      "input": {
+        "target": 181,
+        "score": 156,
+        "ballsBowled": 102,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 25.0,
+        "balls_left": 18.0,
+        "wickets_left": 8.0,
+        "runs_target": 181.0,
+        "crr": 9.176470588235293,
+        "rrr": 8.333333333333334
+      },
+      "winProbability": 0.8799412846565247
+    },
+    {
+      "description": "test row: match 1473500",
+      "input": {
+        "target": 188,
+        "score": 12,
+        "ballsBowled": 12,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 176.0,
+        "balls_left": 108.0,
+        "wickets_left": 10.0,
+        "runs_target": 188.0,
+        "crr": 6.0,
+        "rrr": 9.777777777777779
+      },
+      "winProbability": 0.3392103910446167
+    },
+    {
+      "description": "test row: match 1527680",
+      "input": {
+        "target": 210,
+        "score": 33,
+        "ballsBowled": 11,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 177.0,
+        "balls_left": 109.0,
+        "wickets_left": 10.0,
+        "runs_target": 210.0,
+        "crr": 18.0,
+        "rrr": 9.743119266055047
+      },
+      "winProbability": 0.3248295187950134
+    },
+    {
+      "description": "test row: match 1529303",
+      "input": {
+        "target": 248,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 248.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 248.0,
+        "crr": 0.0,
+        "rrr": 12.4
+      },
+      "winProbability": 0.047481000423431396
+    },
+    {
+      "description": "test row: match 1485779",
+      "input": {
+        "target": 207,
+        "score": 86,
+        "ballsBowled": 57,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 121.0,
+        "balls_left": 63.0,
+        "wickets_left": 8.0,
+        "runs_target": 207.0,
+        "crr": 9.052631578947368,
+        "rrr": 11.523809523809524
+      },
+      "winProbability": 0.18454694747924805
+    },
+    {
+      "description": "test row: match 1529302",
+      "input": {
+        "target": 188,
+        "score": 145,
+        "ballsBowled": 81,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 43.0,
+        "balls_left": 39.0,
+        "wickets_left": 7.0,
+        "runs_target": 188.0,
+        "crr": 10.74074074074074,
+        "rrr": 6.615384615384615
+      },
+      "winProbability": 0.9497644305229187
+    },
+    {
+      "description": "test row: match 1529274",
+      "input": {
+        "target": 243,
+        "score": 19,
+        "ballsBowled": 10,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 224.0,
+        "balls_left": 110.0,
+        "wickets_left": 10.0,
+        "runs_target": 243.0,
+        "crr": 11.4,
+        "rrr": 12.218181818181819
+      },
+      "winProbability": 0.049009621143341064
+    },
+    {
+      "description": "test row: match 1529295",
+      "input": {
+        "target": 230,
+        "score": 30,
+        "ballsBowled": 14,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 200.0,
+        "balls_left": 106.0,
+        "wickets_left": 10.0,
+        "runs_target": 230.0,
+        "crr": 12.857142857142858,
+        "rrr": 11.320754716981131
+      },
+      "winProbability": 0.061316609382629395
+    },
+    {
+      "description": "test row: match 1535465",
+      "input": {
+        "target": 156,
+        "score": 145,
+        "ballsBowled": 97,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 11.0,
+        "balls_left": 23.0,
+        "wickets_left": 5.0,
+        "runs_target": 156.0,
+        "crr": 8.969072164948454,
+        "rrr": 2.869565217391304
+      },
+      "winProbability": 0.989352822303772
+    },
+    {
+      "description": "test row: match 1473502",
+      "input": {
+        "target": 236,
+        "score": 191,
+        "ballsBowled": 105,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 45.0,
+        "balls_left": 15.0,
+        "wickets_left": 5.0,
+        "runs_target": 236.0,
+        "crr": 10.914285714285715,
+        "rrr": 18.0
+      },
+      "winProbability": 0.030424654483795166
+    },
+    {
+      "description": "test row: match 1527678",
+      "input": {
+        "target": 142,
+        "score": 133,
+        "ballsBowled": 99,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 9.0,
+        "balls_left": 21.0,
+        "wickets_left": 6.0,
+        "runs_target": 142.0,
+        "crr": 8.06060606060606,
+        "rrr": 2.5714285714285716
+      },
+      "winProbability": 0.9898905754089355
+    },
+    {
+      "description": "test row: match 1527680",
+      "input": {
+        "target": 210,
+        "score": 81,
+        "ballsBowled": 44,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 129.0,
+        "balls_left": 76.0,
+        "wickets_left": 9.0,
+        "runs_target": 210.0,
+        "crr": 11.045454545454545,
+        "rrr": 10.18421052631579
+      },
+      "winProbability": 0.37953466176986694
+    },
+    {
+      "description": "test row: match 1473473",
+      "input": {
+        "target": 181,
+        "score": 168,
+        "ballsBowled": 113,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 13.0,
+        "balls_left": 7.0,
+        "wickets_left": 6.0,
+        "runs_target": 181.0,
+        "crr": 8.920353982300885,
+        "rrr": 11.142857142857142
+      },
+      "winProbability": 0.7035102844238281
+    },
+    {
+      "description": "test row: match 1527674",
+      "input": {
+        "target": 202,
+        "score": 195,
+        "ballsBowled": 92,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 7.0,
+        "balls_left": 28.0,
+        "wickets_left": 6.0,
+        "runs_target": 202.0,
+        "crr": 12.717391304347826,
+        "rrr": 1.5
+      },
+      "winProbability": 0.9896133542060852
+    },
+    {
+      "description": "test row: match 1529267",
+      "input": {
+        "target": 196,
+        "score": 116,
+        "ballsBowled": 64,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 80.0,
+        "balls_left": 56.0,
+        "wickets_left": 8.0,
+        "runs_target": 196.0,
+        "crr": 10.875,
+        "rrr": 8.571428571428571
+      },
+      "winProbability": 0.8265306353569031
+    },
+    {
+      "description": "test row: match 1473494",
+      "input": {
+        "target": 180,
+        "score": 128,
+        "ballsBowled": 75,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 52.0,
+        "balls_left": 45.0,
+        "wickets_left": 4.0,
+        "runs_target": 180.0,
+        "crr": 10.24,
+        "rrr": 6.933333333333334
+      },
+      "winProbability": 0.8743299841880798
+    },
+    {
+      "description": "test row: match 1535465",
+      "input": {
+        "target": 156,
+        "score": 95,
+        "ballsBowled": 56,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 61.0,
+        "balls_left": 64.0,
+        "wickets_left": 6.0,
+        "runs_target": 156.0,
+        "crr": 10.178571428571429,
+        "rrr": 5.71875
+      },
+      "winProbability": 0.9538207054138184
+    },
+    {
+      "description": "test row: match 1527679",
+      "input": {
+        "target": 227,
+        "score": 34,
+        "ballsBowled": 13,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 193.0,
+        "balls_left": 107.0,
+        "wickets_left": 9.0,
+        "runs_target": 227.0,
+        "crr": 15.692307692307692,
+        "rrr": 10.822429906542055
+      },
+      "winProbability": 0.05738943815231323
+    },
+    {
+      "description": "test row: match 1529295",
+      "input": {
+        "target": 230,
+        "score": 25,
+        "ballsBowled": 10,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 205.0,
+        "balls_left": 110.0,
+        "wickets_left": 10.0,
+        "runs_target": 230.0,
+        "crr": 15.0,
+        "rrr": 11.181818181818182
+      },
+      "winProbability": 0.06670212745666504
+    },
+    {
+      "description": "test row: match 1529268",
+      "input": {
+        "target": 181,
+        "score": 147,
+        "ballsBowled": 94,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 34.0,
+        "balls_left": 26.0,
+        "wickets_left": 7.0,
+        "runs_target": 181.0,
+        "crr": 9.382978723404255,
+        "rrr": 7.846153846153846
+      },
+      "winProbability": 0.8840548992156982
+    },
+    {
+      "description": "test row: match 1527693",
+      "input": {
+        "target": 241,
+        "score": 167,
+        "ballsBowled": 102,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 74.0,
+        "balls_left": 18.0,
+        "wickets_left": 5.0,
+        "runs_target": 241.0,
+        "crr": 9.823529411764707,
+        "rrr": 24.666666666666668
+      },
+      "winProbability": 0.009890437126159668
+    },
+    {
+      "description": "test row: match 1473474",
+      "input": {
+        "target": 158,
+        "score": 12,
+        "ballsBowled": 9,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 146.0,
+        "balls_left": 111.0,
+        "wickets_left": 9.0,
+        "runs_target": 158.0,
+        "crr": 8.0,
+        "rrr": 7.891891891891892
+      },
+      "winProbability": 0.5292941331863403
+    },
+    {
+      "description": "test row: match 1473506",
+      "input": {
+        "target": 185,
+        "score": 136,
+        "ballsBowled": 80,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 49.0,
+        "balls_left": 40.0,
+        "wickets_left": 9.0,
+        "runs_target": 185.0,
+        "crr": 10.2,
+        "rrr": 7.35
+      },
+      "winProbability": 0.9063006043434143
+    },
+    {
+      "description": "test row: match 1473439",
+      "input": {
+        "target": 287,
+        "score": 232,
+        "ballsBowled": 114,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 55.0,
+        "balls_left": 6.0,
+        "wickets_left": 5.0,
+        "runs_target": 287.0,
+        "crr": 12.210526315789474,
+        "rrr": 55.0
+      },
+      "winProbability": 0.012379586696624756
+    },
+    {
+      "description": "test row: match 1527691",
+      "input": {
+        "target": 213,
+        "score": 47,
+        "ballsBowled": 22,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 166.0,
+        "balls_left": 98.0,
+        "wickets_left": 10.0,
+        "runs_target": 213.0,
+        "crr": 12.818181818181818,
+        "rrr": 10.16326530612245
+      },
+      "winProbability": 0.3374550938606262
+    },
+    {
+      "description": "test row: match 1473475",
+      "input": {
+        "target": 177,
+        "score": 101,
+        "ballsBowled": 63,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 76.0,
+        "balls_left": 57.0,
+        "wickets_left": 9.0,
+        "runs_target": 177.0,
+        "crr": 9.619047619047619,
+        "rrr": 8.0
+      },
+      "winProbability": 0.8377479314804077
+    },
+    {
+      "description": "test row: match 1529283",
+      "input": {
+        "target": 223,
+        "score": 45,
+        "ballsBowled": 18,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 178.0,
+        "balls_left": 102.0,
+        "wickets_left": 10.0,
+        "runs_target": 223.0,
+        "crr": 15.0,
+        "rrr": 10.470588235294118
+      },
+      "winProbability": 0.12553000450134277
+    },
+    {
+      "description": "test row: match 1527680",
+      "input": {
+        "target": 210,
+        "score": 127,
+        "ballsBowled": 70,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 83.0,
+        "balls_left": 50.0,
+        "wickets_left": 8.0,
+        "runs_target": 210.0,
+        "crr": 10.885714285714286,
+        "rrr": 9.96
+      },
+      "winProbability": 0.4787819981575012
+    },
+    {
+      "description": "test row: match 1529292",
+      "input": {
+        "target": 236,
+        "score": 75,
+        "ballsBowled": 55,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 161.0,
+        "balls_left": 65.0,
+        "wickets_left": 6.0,
+        "runs_target": 236.0,
+        "crr": 8.181818181818182,
+        "rrr": 14.861538461538462
+      },
+      "winProbability": 0.01959890127182007
+    },
+    {
+      "description": "test row: match 1529307",
+      "input": {
+        "target": 221,
+        "score": 193,
+        "ballsBowled": 94,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 28.0,
+        "balls_left": 26.0,
+        "wickets_left": 8.0,
+        "runs_target": 221.0,
+        "crr": 12.319148936170214,
+        "rrr": 6.461538461538462
+      },
+      "winProbability": 0.87701416015625
+    },
+    {
+      "description": "test row: match 1529310",
+      "input": {
+        "target": 256,
+        "score": 91,
+        "ballsBowled": 47,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 165.0,
+        "balls_left": 73.0,
+        "wickets_left": 8.0,
+        "runs_target": 256.0,
+        "crr": 11.617021276595745,
+        "rrr": 13.561643835616438
+      },
+      "winProbability": 0.032489776611328125
+    },
+    {
+      "description": "test row: match 1529294",
+      "input": {
+        "target": 143,
+        "score": 32,
+        "ballsBowled": 24,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 111.0,
+        "balls_left": 96.0,
+        "wickets_left": 8.0,
+        "runs_target": 143.0,
+        "crr": 8.0,
+        "rrr": 6.9375
+      },
+      "winProbability": 0.8220152258872986
+    },
+    {
+      "description": "test row: match 1473503",
+      "input": {
+        "target": 232,
+        "score": 121,
+        "ballsBowled": 65,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 111.0,
+        "balls_left": 55.0,
+        "wickets_left": 8.0,
+        "runs_target": 232.0,
+        "crr": 11.169230769230769,
+        "rrr": 12.10909090909091
+      },
+      "winProbability": 0.05283325910568237
+    },
+    {
+      "description": "test row: match 1527692",
+      "input": {
+        "target": 165,
+        "score": 18,
+        "ballsBowled": 16,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 147.0,
+        "balls_left": 104.0,
+        "wickets_left": 10.0,
+        "runs_target": 165.0,
+        "crr": 6.75,
+        "rrr": 8.48076923076923
+      },
+      "winProbability": 0.495195209980011
+    },
+    {
+      "description": "test row: match 1527684",
+      "input": {
+        "target": 251,
+        "score": 135,
+        "ballsBowled": 71,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 116.0,
+        "balls_left": 49.0,
+        "wickets_left": 4.0,
+        "runs_target": 251.0,
+        "crr": 11.408450704225352,
+        "rrr": 14.204081632653061
+      },
+      "winProbability": 0.015218377113342285
+    },
+    {
+      "description": "test row: match 1529294",
+      "input": {
+        "target": 143,
+        "score": 125,
+        "ballsBowled": 78,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 18.0,
+        "balls_left": 42.0,
+        "wickets_left": 8.0,
+        "runs_target": 143.0,
+        "crr": 9.615384615384615,
+        "rrr": 2.5714285714285716
+      },
+      "winProbability": 0.990581214427948
+    },
+    {
+      "description": "test row: match 1529299",
+      "input": {
+        "target": 169,
+        "score": 18,
+        "ballsBowled": 15,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 151.0,
+        "balls_left": 105.0,
+        "wickets_left": 8.0,
+        "runs_target": 169.0,
+        "crr": 7.2,
+        "rrr": 8.628571428571428
+      },
+      "winProbability": 0.3189042806625366
+    },
+    {
+      "description": "test row: match 1527678",
+      "input": {
+        "target": 142,
+        "score": 94,
+        "ballsBowled": 79,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 48.0,
+        "balls_left": 41.0,
+        "wickets_left": 6.0,
+        "runs_target": 142.0,
+        "crr": 7.139240506329114,
+        "rrr": 7.024390243902439
+      },
+      "winProbability": 0.8866138458251953
+    },
+    {
+      "description": "test row: match 1527678",
+      "input": {
+        "target": 142,
+        "score": 6,
+        "ballsBowled": 5,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 136.0,
+        "balls_left": 115.0,
+        "wickets_left": 9.0,
+        "runs_target": 142.0,
+        "crr": 7.2,
+        "rrr": 7.095652173913043
+      },
+      "winProbability": 0.8236363530158997
+    },
+    {
+      "description": "test row: match 1529298",
+      "input": {
+        "target": 211,
+        "score": 125,
+        "ballsBowled": 80,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 86.0,
+        "balls_left": 40.0,
+        "wickets_left": 6.0,
+        "runs_target": 211.0,
+        "crr": 9.375,
+        "rrr": 12.9
+      },
+      "winProbability": 0.20500683784484863
+    },
+    {
+      "description": "test row: match 1473454",
+      "input": {
+        "target": 184,
+        "score": 20,
+        "ballsBowled": 13,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 164.0,
+        "balls_left": 107.0,
+        "wickets_left": 9.0,
+        "runs_target": 184.0,
+        "crr": 9.23076923076923,
+        "rrr": 9.19626168224299
+      },
+      "winProbability": 0.43086814880371094
+    },
+    {
+      "description": "test row: match 1473460",
+      "input": {
+        "target": 218,
+        "score": 11,
+        "ballsBowled": 8,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 207.0,
+        "balls_left": 112.0,
+        "wickets_left": 9.0,
+        "runs_target": 218.0,
+        "crr": 8.25,
+        "rrr": 11.089285714285714
+      },
+      "winProbability": 0.14241987466812134
+    },
+    {
+      "description": "test row: match 1473458",
+      "input": {
+        "target": 222,
+        "score": 25,
+        "ballsBowled": 12,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 197.0,
+        "balls_left": 108.0,
+        "wickets_left": 9.0,
+        "runs_target": 222.0,
+        "crr": 12.5,
+        "rrr": 10.944444444444445
+      },
+      "winProbability": 0.08766227960586548
+    },
+    {
+      "description": "test row: match 1473497",
+      "input": {
+        "target": 220,
+        "score": 200,
+        "ballsBowled": 117,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 20.0,
+        "balls_left": 3.0,
+        "wickets_left": 4.0,
+        "runs_target": 220.0,
+        "crr": 10.256410256410257,
+        "rrr": 40.0
+      },
+      "winProbability": 0.022504448890686035
+    },
+    {
+      "description": "test row: match 1473448",
+      "input": {
+        "target": 183,
+        "score": 114,
+        "ballsBowled": 86,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 69.0,
+        "balls_left": 34.0,
+        "wickets_left": 6.0,
+        "runs_target": 183.0,
+        "crr": 7.953488372093023,
+        "rrr": 12.176470588235293
+      },
+      "winProbability": 0.2806055545806885
+    },
+    {
+      "description": "test row: match 1473466",
+      "input": {
+        "target": 206,
+        "score": 5,
+        "ballsBowled": 3,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 201.0,
+        "balls_left": 117.0,
+        "wickets_left": 9.0,
+        "runs_target": 206.0,
+        "crr": 10.0,
+        "rrr": 10.307692307692308
+      },
+      "winProbability": 0.4803202748298645
+    },
+    {
+      "description": "test row: match 1473472",
+      "input": {
+        "target": 204,
+        "score": 123,
+        "ballsBowled": 76,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 81.0,
+        "balls_left": 44.0,
+        "wickets_left": 8.0,
+        "runs_target": 204.0,
+        "crr": 9.710526315789474,
+        "rrr": 11.045454545454545
+      },
+      "winProbability": 0.5613073706626892
+    },
+    {
+      "description": "test row: match 1529312",
+      "input": {
+        "target": 206,
+        "score": 147,
+        "ballsBowled": 90,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 59.0,
+        "balls_left": 30.0,
+        "wickets_left": 5.0,
+        "runs_target": 206.0,
+        "crr": 9.8,
+        "rrr": 11.8
+      },
+      "winProbability": 0.46286118030548096
+    },
+    {
+      "description": "test row: match 1529301",
+      "input": {
+        "target": 201,
+        "score": 90,
+        "ballsBowled": 63,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 111.0,
+        "balls_left": 57.0,
+        "wickets_left": 7.0,
+        "runs_target": 201.0,
+        "crr": 8.571428571428571,
+        "rrr": 11.68421052631579
+      },
+      "winProbability": 0.21364593505859375
+    },
+    {
+      "description": "test row: match 1473480",
+      "input": {
+        "target": 155,
+        "score": 6,
+        "ballsBowled": 8,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 149.0,
+        "balls_left": 112.0,
+        "wickets_left": 9.0,
+        "runs_target": 155.0,
+        "crr": 4.5,
+        "rrr": 7.982142857142857
+      },
+      "winProbability": 0.5798860788345337
+    },
+    {
+      "description": "test row: match 1529297",
+      "input": {
+        "target": 167,
+        "score": 62,
+        "ballsBowled": 52,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 105.0,
+        "balls_left": 68.0,
+        "wickets_left": 7.0,
+        "runs_target": 167.0,
+        "crr": 7.153846153846154,
+        "rrr": 9.264705882352942
+      },
+      "winProbability": 0.3207605481147766
+    },
+    {
+      "description": "test row: match 1527683",
+      "input": {
+        "target": 157,
+        "score": 137,
+        "ballsBowled": 101,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 20.0,
+        "balls_left": 19.0,
+        "wickets_left": 6.0,
+        "runs_target": 157.0,
+        "crr": 8.138613861386139,
+        "rrr": 6.315789473684211
+      },
+      "winProbability": 0.9610911011695862
+    },
+    {
+      "description": "test row: match 1529275",
+      "input": {
+        "target": 160,
+        "score": 62,
+        "ballsBowled": 65,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 98.0,
+        "balls_left": 55.0,
+        "wickets_left": 6.0,
+        "runs_target": 160.0,
+        "crr": 5.723076923076923,
+        "rrr": 10.690909090909091
+      },
+      "winProbability": 0.23190689086914062
+    },
+    {
+      "description": "test row: match 1473489",
+      "input": {
+        "target": 214,
+        "score": 181,
+        "ballsBowled": 105,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 33.0,
+        "balls_left": 15.0,
+        "wickets_left": 6.0,
+        "runs_target": 214.0,
+        "crr": 10.342857142857143,
+        "rrr": 13.2
+      },
+      "winProbability": 0.508040726184845
+    },
+    {
+      "description": "test row: match 1473473",
+      "input": {
+        "target": 181,
+        "score": 113,
+        "ballsBowled": 72,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 68.0,
+        "balls_left": 48.0,
+        "wickets_left": 8.0,
+        "runs_target": 181.0,
+        "crr": 9.416666666666666,
+        "rrr": 8.5
+      },
+      "winProbability": 0.7864528298377991
+    },
+    {
+      "description": "test row: match 1527692",
+      "input": {
+        "target": 165,
+        "score": 8,
+        "ballsBowled": 6,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 157.0,
+        "balls_left": 114.0,
+        "wickets_left": 10.0,
+        "runs_target": 165.0,
+        "crr": 8.0,
+        "rrr": 8.263157894736842
+      },
+      "winProbability": 0.4954299330711365
+    },
+    {
+      "description": "test row: match 1529311",
+      "input": {
+        "target": 197,
+        "score": 22,
+        "ballsBowled": 13,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 175.0,
+        "balls_left": 107.0,
+        "wickets_left": 9.0,
+        "runs_target": 197.0,
+        "crr": 10.153846153846153,
+        "rrr": 9.813084112149532
+      },
+      "winProbability": 0.4621465802192688
+    },
+    {
+      "description": "test row: match 1527677",
+      "input": {
+        "target": 163,
+        "score": 106,
+        "ballsBowled": 68,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 57.0,
+        "balls_left": 52.0,
+        "wickets_left": 8.0,
+        "runs_target": 163.0,
+        "crr": 9.352941176470589,
+        "rrr": 6.576923076923077
+      },
+      "winProbability": 0.9485366940498352
+    },
+    {
+      "description": "test row: match 1529272",
+      "input": {
+        "target": 255,
+        "score": 129,
+        "ballsBowled": 77,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 126.0,
+        "balls_left": 43.0,
+        "wickets_left": 7.0,
+        "runs_target": 255.0,
+        "crr": 10.051948051948052,
+        "rrr": 17.58139534883721
+      },
+      "winProbability": 0.01969468593597412
+    },
+    {
+      "description": "test row: match 1473458",
+      "input": {
+        "target": 222,
+        "score": 73,
+        "ballsBowled": 47,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 149.0,
+        "balls_left": 73.0,
+        "wickets_left": 8.0,
+        "runs_target": 222.0,
+        "crr": 9.319148936170214,
+        "rrr": 12.246575342465754
+      },
+      "winProbability": 0.05317050218582153
+    },
+    {
+      "description": "test row: match 1527691",
+      "input": {
+        "target": 213,
+        "score": 71,
+        "ballsBowled": 37,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 142.0,
+        "balls_left": 83.0,
+        "wickets_left": 7.0,
+        "runs_target": 213.0,
+        "crr": 11.513513513513514,
+        "rrr": 10.265060240963855
+      },
+      "winProbability": 0.23403072357177734
+    },
+    {
+      "description": "test row: match 1527689",
+      "input": {
+        "target": 202,
+        "score": 21,
+        "ballsBowled": 13,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 181.0,
+        "balls_left": 107.0,
+        "wickets_left": 9.0,
+        "runs_target": 202.0,
+        "crr": 9.692307692307692,
+        "rrr": 10.149532710280374
+      },
+      "winProbability": 0.3839341402053833
+    },
+    {
+      "description": "test row: match 1473504",
+      "input": {
+        "target": 231,
+        "score": 117,
+        "ballsBowled": 87,
+        "wicketsLost": 7
+      },
+      "features": {
+        "runs_left": 114.0,
+        "balls_left": 33.0,
+        "wickets_left": 3.0,
+        "runs_target": 231.0,
+        "crr": 8.068965517241379,
+        "rrr": 20.727272727272727
+      },
+      "winProbability": 0.006203889846801758
+    },
+    {
+      "description": "test row: match 1473507",
+      "input": {
+        "target": 228,
+        "score": 205,
+        "ballsBowled": 104,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 23.0,
+        "balls_left": 16.0,
+        "wickets_left": 6.0,
+        "runs_target": 228.0,
+        "crr": 11.826923076923077,
+        "rrr": 8.625
+      },
+      "winProbability": 0.438159704208374
+    },
+    {
+      "description": "test row: match 1473443",
+      "input": {
+        "target": 152,
+        "score": 27,
+        "ballsBowled": 22,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 125.0,
+        "balls_left": 98.0,
+        "wickets_left": 10.0,
+        "runs_target": 152.0,
+        "crr": 7.363636363636363,
+        "rrr": 7.653061224489796
+      },
+      "winProbability": 0.7173409461975098
+    },
+    {
+      "description": "test row: match 1473454",
+      "input": {
+        "target": 184,
+        "score": 87,
+        "ballsBowled": 79,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 97.0,
+        "balls_left": 41.0,
+        "wickets_left": 5.0,
+        "runs_target": 184.0,
+        "crr": 6.6075949367088604,
+        "rrr": 14.195121951219512
+      },
+      "winProbability": 0.06778973340988159
+    },
+    {
+      "description": "test row: match 1473490",
+      "input": {
+        "target": 207,
+        "score": 79,
+        "ballsBowled": 57,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 128.0,
+        "balls_left": 63.0,
+        "wickets_left": 5.0,
+        "runs_target": 207.0,
+        "crr": 8.31578947368421,
+        "rrr": 12.19047619047619
+      },
+      "winProbability": 0.06201529502868652
+    },
+    {
+      "description": "test row: match 1529272",
+      "input": {
+        "target": 255,
+        "score": 188,
+        "ballsBowled": 110,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 67.0,
+        "balls_left": 10.0,
+        "wickets_left": 6.0,
+        "runs_target": 255.0,
+        "crr": 10.254545454545454,
+        "rrr": 40.2
+      },
+      "winProbability": 0.01640266180038452
+    },
+    {
+      "description": "test row: match 1529304",
+      "input": {
+        "target": 223,
+        "score": 64,
+        "ballsBowled": 46,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 159.0,
+        "balls_left": 74.0,
+        "wickets_left": 6.0,
+        "runs_target": 223.0,
+        "crr": 8.347826086956522,
+        "rrr": 12.891891891891891
+      },
+      "winProbability": 0.035786986351013184
+    },
+    {
+      "description": "test row: match 1529289",
+      "input": {
+        "target": 164,
+        "score": 11,
+        "ballsBowled": 5,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 153.0,
+        "balls_left": 115.0,
+        "wickets_left": 10.0,
+        "runs_target": 164.0,
+        "crr": 13.2,
+        "rrr": 7.982608695652174
+      },
+      "winProbability": 0.6801932454109192
+    },
+    {
+      "description": "test row: match 1529306",
+      "input": {
+        "target": 181,
+        "score": 137,
+        "ballsBowled": 90,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 44.0,
+        "balls_left": 30.0,
+        "wickets_left": 7.0,
+        "runs_target": 181.0,
+        "crr": 9.133333333333333,
+        "rrr": 8.8
+      },
+      "winProbability": 0.8442825078964233
+    },
+    {
+      "description": "test row: match 1527689",
+      "input": {
+        "target": 202,
+        "score": 153,
+        "ballsBowled": 77,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 49.0,
+        "balls_left": 43.0,
+        "wickets_left": 6.0,
+        "runs_target": 202.0,
+        "crr": 11.922077922077921,
+        "rrr": 6.837209302325581
+      },
+      "winProbability": 0.9255406260490417
+    },
+    {
+      "description": "test row: match 1529300",
+      "input": {
+        "target": 193,
+        "score": 81,
+        "ballsBowled": 50,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 112.0,
+        "balls_left": 70.0,
+        "wickets_left": 9.0,
+        "runs_target": 193.0,
+        "crr": 9.72,
+        "rrr": 9.6
+      },
+      "winProbability": 0.6056640148162842
+    },
+    {
+      "description": "test row: match 1529287",
+      "input": {
+        "target": 160,
+        "score": 110,
+        "ballsBowled": 74,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 50.0,
+        "balls_left": 46.0,
+        "wickets_left": 8.0,
+        "runs_target": 160.0,
+        "crr": 8.91891891891892,
+        "rrr": 6.521739130434782
+      },
+      "winProbability": 0.9605065584182739
+    },
+    {
+      "description": "test row: match 1473455",
+      "input": {
+        "target": 206,
+        "score": 49,
+        "ballsBowled": 46,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 157.0,
+        "balls_left": 74.0,
+        "wickets_left": 6.0,
+        "runs_target": 206.0,
+        "crr": 6.391304347826087,
+        "rrr": 12.72972972972973
+      },
+      "winProbability": 0.10726058483123779
+    },
+    {
+      "description": "test row: match 1473485",
+      "input": {
+        "target": 205,
+        "score": 39,
+        "ballsBowled": 24,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 166.0,
+        "balls_left": 96.0,
+        "wickets_left": 9.0,
+        "runs_target": 205.0,
+        "crr": 9.75,
+        "rrr": 10.375
+      },
+      "winProbability": 0.36354225873947144
+    },
+    {
+      "description": "test row: match 1529309",
+      "input": {
+        "target": 230,
+        "score": 140,
+        "ballsBowled": 79,
+        "wicketsLost": 8
+      },
+      "features": {
+        "runs_left": 90.0,
+        "balls_left": 41.0,
+        "wickets_left": 2.0,
+        "runs_target": 230.0,
+        "crr": 10.632911392405063,
+        "rrr": 13.170731707317072
+      },
+      "winProbability": 0.01708519458770752
+    },
+    {
+      "description": "test row: match 1529282",
+      "input": {
+        "target": 76,
+        "score": 4,
+        "ballsBowled": 3,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 72.0,
+        "balls_left": 117.0,
+        "wickets_left": 10.0,
+        "runs_target": 76.0,
+        "crr": 8.0,
+        "rrr": 3.6923076923076925
+      },
+      "winProbability": 0.9932501316070557
+    },
+    {
+      "description": "test row: match 1527678",
+      "input": {
+        "target": 142,
+        "score": 106,
+        "ballsBowled": 83,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 36.0,
+        "balls_left": 37.0,
+        "wickets_left": 6.0,
+        "runs_target": 142.0,
+        "crr": 7.662650602409639,
+        "rrr": 5.837837837837838
+      },
+      "winProbability": 0.9628307223320007
+    },
+    {
+      "description": "test row: match 1473484",
+      "input": {
+        "target": 210,
+        "score": 99,
+        "ballsBowled": 45,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 111.0,
+        "balls_left": 75.0,
+        "wickets_left": 10.0,
+        "runs_target": 210.0,
+        "crr": 13.2,
+        "rrr": 8.88
+      },
+      "winProbability": 0.6547533273696899
+    },
+    {
+      "description": "test row: match 1527678",
+      "input": {
+        "target": 142,
+        "score": 120,
+        "ballsBowled": 94,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 22.0,
+        "balls_left": 26.0,
+        "wickets_left": 6.0,
+        "runs_target": 142.0,
+        "crr": 7.659574468085107,
+        "rrr": 5.076923076923077
+      },
+      "winProbability": 0.9856376051902771
+    },
+    {
+      "description": "test row: match 1473509",
+      "input": {
+        "target": 229,
+        "score": 1,
+        "ballsBowled": 1,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 228.0,
+        "balls_left": 119.0,
+        "wickets_left": 10.0,
+        "runs_target": 229.0,
+        "crr": 6.0,
+        "rrr": 11.495798319327731
+      },
+      "winProbability": 0.06216150522232056
+    },
+    {
+      "description": "test row: match 1529304",
+      "input": {
+        "target": 223,
+        "score": 188,
+        "ballsBowled": 112,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 35.0,
+        "balls_left": 8.0,
+        "wickets_left": 4.0,
+        "runs_target": 223.0,
+        "crr": 10.071428571428571,
+        "rrr": 26.25
+      },
+      "winProbability": 0.01741260290145874
+    },
+    {
+      "description": "test row: match 1473478",
+      "input": {
+        "target": 144,
+        "score": 106,
+        "ballsBowled": 78,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 38.0,
+        "balls_left": 42.0,
+        "wickets_left": 8.0,
+        "runs_target": 144.0,
+        "crr": 8.153846153846153,
+        "rrr": 5.428571428571429
+      },
+      "winProbability": 0.970575213432312
+    },
+    {
+      "description": "test row: match 1529302",
+      "input": {
+        "target": 188,
+        "score": 137,
+        "ballsBowled": 73,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 51.0,
+        "balls_left": 47.0,
+        "wickets_left": 8.0,
+        "runs_target": 188.0,
+        "crr": 11.26027397260274,
+        "rrr": 6.51063829787234
+      },
+      "winProbability": 0.9582383036613464
+    },
+    {
+      "description": "test row: match 1527678",
+      "input": {
+        "target": 142,
+        "score": 14,
+        "ballsBowled": 12,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 128.0,
+        "balls_left": 108.0,
+        "wickets_left": 9.0,
+        "runs_target": 142.0,
+        "crr": 7.0,
+        "rrr": 7.111111111111111
+      },
+      "winProbability": 0.8202673196792603
+    },
+    {
+      "description": "test row: match 1535462",
+      "input": {
+        "target": 255,
+        "score": 161,
+        "ballsBowled": 114,
+        "wicketsLost": 9
+      },
+      "features": {
+        "runs_left": 94.0,
+        "balls_left": 6.0,
+        "wickets_left": 1.0,
+        "runs_target": 255.0,
+        "crr": 8.473684210526315,
+        "rrr": 94.0
+      },
+      "winProbability": 0.005648970603942871
+    },
+    {
+      "description": "test row: match 1527684",
+      "input": {
+        "target": 251,
+        "score": 105,
+        "ballsBowled": 54,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 146.0,
+        "balls_left": 66.0,
+        "wickets_left": 5.0,
+        "runs_target": 251.0,
+        "crr": 11.666666666666666,
+        "rrr": 13.272727272727273
+      },
+      "winProbability": 0.01887577772140503
+    },
+    {
+      "description": "test row: match 1527677",
+      "input": {
+        "target": 163,
+        "score": 118,
+        "ballsBowled": 85,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 45.0,
+        "balls_left": 35.0,
+        "wickets_left": 6.0,
+        "runs_target": 163.0,
+        "crr": 8.329411764705883,
+        "rrr": 7.714285714285714
+      },
+      "winProbability": 0.8117794990539551
+    },
+    {
+      "description": "test row: match 1529274",
+      "input": {
+        "target": 243,
+        "score": 107,
+        "ballsBowled": 60,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 136.0,
+        "balls_left": 60.0,
+        "wickets_left": 8.0,
+        "runs_target": 243.0,
+        "crr": 10.7,
+        "rrr": 13.6
+      },
+      "winProbability": 0.034968018531799316
+    },
+    {
+      "description": "test row: match 1527691",
+      "input": {
+        "target": 213,
+        "score": 8,
+        "ballsBowled": 5,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 205.0,
+        "balls_left": 115.0,
+        "wickets_left": 10.0,
+        "runs_target": 213.0,
+        "crr": 9.6,
+        "rrr": 10.695652173913043
+      },
+      "winProbability": 0.2823079228401184
+    },
+    {
+      "description": "test row: match 1473488",
+      "input": {
+        "target": 225,
+        "score": 50,
+        "ballsBowled": 28,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 175.0,
+        "balls_left": 92.0,
+        "wickets_left": 9.0,
+        "runs_target": 225.0,
+        "crr": 10.714285714285714,
+        "rrr": 11.41304347826087
+      },
+      "winProbability": 0.05271345376968384
+    },
+    {
+      "description": "test row: match 1529284",
+      "input": {
+        "target": 244,
+        "score": 12,
+        "ballsBowled": 7,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 232.0,
+        "balls_left": 113.0,
+        "wickets_left": 10.0,
+        "runs_target": 244.0,
+        "crr": 10.285714285714286,
+        "rrr": 12.31858407079646
+      },
+      "winProbability": 0.049009621143341064
+    },
+    {
+      "description": "test row: match 1529265",
+      "input": {
+        "target": 193,
+        "score": 88,
+        "ballsBowled": 69,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 105.0,
+        "balls_left": 51.0,
+        "wickets_left": 5.0,
+        "runs_target": 193.0,
+        "crr": 7.6521739130434785,
+        "rrr": 12.352941176470589
+      },
+      "winProbability": 0.07623064517974854
+    },
+    {
+      "description": "test row: match 1529265",
+      "input": {
+        "target": 193,
+        "score": 107,
+        "ballsBowled": 91,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 86.0,
+        "balls_left": 29.0,
+        "wickets_left": 4.0,
+        "runs_target": 193.0,
+        "crr": 7.054945054945055,
+        "rrr": 17.79310344827586
+      },
+      "winProbability": 0.0208093523979187
+    },
+    {
+      "description": "test row: match 1529312",
+      "input": {
+        "target": 206,
+        "score": 103,
+        "ballsBowled": 70,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 103.0,
+        "balls_left": 50.0,
+        "wickets_left": 5.0,
+        "runs_target": 206.0,
+        "crr": 8.82857142857143,
+        "rrr": 12.36
+      },
+      "winProbability": 0.17716920375823975
+    },
+    {
+      "description": "test row: match 1527682",
+      "input": {
+        "target": 211,
+        "score": 127,
+        "ballsBowled": 73,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 84.0,
+        "balls_left": 47.0,
+        "wickets_left": 7.0,
+        "runs_target": 211.0,
+        "crr": 10.438356164383562,
+        "rrr": 10.72340425531915
+      },
+      "winProbability": 0.41903436183929443
+    },
+    {
+      "description": "test row: match 1527690",
+      "input": {
+        "target": 220,
+        "score": 105,
+        "ballsBowled": 46,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 115.0,
+        "balls_left": 74.0,
+        "wickets_left": 9.0,
+        "runs_target": 220.0,
+        "crr": 13.695652173913043,
+        "rrr": 9.324324324324325
+      },
+      "winProbability": 0.2985702157020569
+    },
+    {
+      "description": "test row: match 1473468",
+      "input": {
+        "target": 112,
+        "score": 26,
+        "ballsBowled": 24,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 86.0,
+        "balls_left": 96.0,
+        "wickets_left": 8.0,
+        "runs_target": 112.0,
+        "crr": 6.5,
+        "rrr": 5.375
+      },
+      "winProbability": 0.985757052898407
+    },
+    {
+      "description": "test row: match 1473501",
+      "input": {
+        "target": 181,
+        "score": 27,
+        "ballsBowled": 24,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 154.0,
+        "balls_left": 96.0,
+        "wickets_left": 8.0,
+        "runs_target": 181.0,
+        "crr": 6.75,
+        "rrr": 9.625
+      },
+      "winProbability": 0.278380811214447
+    },
+    {
+      "description": "test row: match 1529290",
+      "input": {
+        "target": 229,
+        "score": 28,
+        "ballsBowled": 15,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 201.0,
+        "balls_left": 105.0,
+        "wickets_left": 10.0,
+        "runs_target": 229.0,
+        "crr": 11.2,
+        "rrr": 11.485714285714286
+      },
+      "winProbability": 0.061316609382629395
+    },
+    {
+      "description": "test row: match 1529283",
+      "input": {
+        "target": 223,
+        "score": 43,
+        "ballsBowled": 16,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 180.0,
+        "balls_left": 104.0,
+        "wickets_left": 10.0,
+        "runs_target": 223.0,
+        "crr": 16.125,
+        "rrr": 10.384615384615385
+      },
+      "winProbability": 0.12553000450134277
+    },
+    {
+      "description": "test row: match 1473473",
+      "input": {
+        "target": 181,
+        "score": 41,
+        "ballsBowled": 23,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 140.0,
+        "balls_left": 97.0,
+        "wickets_left": 10.0,
+        "runs_target": 181.0,
+        "crr": 10.695652173913043,
+        "rrr": 8.65979381443299
+      },
+      "winProbability": 0.7130807638168335
+    },
+    {
+      "description": "test row: match 1473451",
+      "input": {
+        "target": 170,
+        "score": 42,
+        "ballsBowled": 37,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 128.0,
+        "balls_left": 83.0,
+        "wickets_left": 9.0,
+        "runs_target": 170.0,
+        "crr": 6.8108108108108105,
+        "rrr": 9.25301204819277
+      },
+      "winProbability": 0.39555227756500244
+    },
+    {
+      "description": "test row: match 1529267",
+      "input": {
+        "target": 196,
+        "score": 193,
+        "ballsBowled": 98,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 3.0,
+        "balls_left": 22.0,
+        "wickets_left": 7.0,
+        "runs_target": 196.0,
+        "crr": 11.816326530612244,
+        "rrr": 0.8181818181818182
+      },
+      "winProbability": 0.9922312498092651
+    },
+    {
+      "description": "test row: match 1527682",
+      "input": {
+        "target": 211,
+        "score": 103,
+        "ballsBowled": 60,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 108.0,
+        "balls_left": 60.0,
+        "wickets_left": 9.0,
+        "runs_target": 211.0,
+        "crr": 10.3,
+        "rrr": 10.8
+      },
+      "winProbability": 0.4537327289581299
+    },
+    {
+      "description": "test row: match 1473464",
+      "input": {
+        "target": 246,
+        "score": 183,
+        "ballsBowled": 82,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 63.0,
+        "balls_left": 38.0,
+        "wickets_left": 9.0,
+        "runs_target": 246.0,
+        "crr": 13.390243902439025,
+        "rrr": 9.947368421052632
+      },
+      "winProbability": 0.26416635513305664
+    },
+    {
+      "description": "test row: match 1473465",
+      "input": {
+        "target": 174,
+        "score": 10,
+        "ballsBowled": 5,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 164.0,
+        "balls_left": 115.0,
+        "wickets_left": 10.0,
+        "runs_target": 174.0,
+        "crr": 12.0,
+        "rrr": 8.556521739130435
+      },
+      "winProbability": 0.6250485777854919
+    },
+    {
+      "description": "test row: match 1473500",
+      "input": {
+        "target": 188,
+        "score": 129,
+        "ballsBowled": 76,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 59.0,
+        "balls_left": 44.0,
+        "wickets_left": 9.0,
+        "runs_target": 188.0,
+        "crr": 10.18421052631579,
+        "rrr": 8.045454545454545
+      },
+      "winProbability": 0.8425358533859253
+    },
+    {
+      "description": "test row: match 1473442",
+      "input": {
+        "target": 244,
+        "score": 186,
+        "ballsBowled": 101,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 58.0,
+        "balls_left": 19.0,
+        "wickets_left": 8.0,
+        "runs_target": 244.0,
+        "crr": 11.049504950495049,
+        "rrr": 18.31578947368421
+      },
+      "winProbability": 0.023531079292297363
+    },
+    {
+      "description": "test row: match 1473449",
+      "input": {
+        "target": 117,
+        "score": 70,
+        "ballsBowled": 49,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 47.0,
+        "balls_left": 71.0,
+        "wickets_left": 9.0,
+        "runs_target": 117.0,
+        "crr": 8.571428571428571,
+        "rrr": 3.971830985915493
+      },
+      "winProbability": 0.9782362580299377
+    },
+    {
+      "description": "test row: match 1527675",
+      "input": {
+        "target": 221,
+        "score": 193,
+        "ballsBowled": 95,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 28.0,
+        "balls_left": 25.0,
+        "wickets_left": 7.0,
+        "runs_target": 221.0,
+        "crr": 12.189473684210526,
+        "rrr": 6.72
+      },
+      "winProbability": 0.8002526164054871
+    },
+    {
+      "description": "test row: match 1529273",
+      "input": {
+        "target": 200,
+        "score": 54,
+        "ballsBowled": 44,
+        "wicketsLost": 4
+      },
+      "features": {
+        "runs_left": 146.0,
+        "balls_left": 76.0,
+        "wickets_left": 6.0,
+        "runs_target": 200.0,
+        "crr": 7.363636363636363,
+        "rrr": 11.526315789473685
+      },
+      "winProbability": 0.12635350227355957
+    },
+    {
+      "description": "test row: match 1529274",
+      "input": {
+        "target": 243,
+        "score": 87,
+        "ballsBowled": 49,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 156.0,
+        "balls_left": 71.0,
+        "wickets_left": 9.0,
+        "runs_target": 243.0,
+        "crr": 10.653061224489797,
+        "rrr": 13.183098591549296
+      },
+      "winProbability": 0.045946478843688965
+    },
+    {
+      "description": "test row: match 1473438",
+      "input": {
+        "target": 175,
+        "score": 17,
+        "ballsBowled": 12,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 158.0,
+        "balls_left": 108.0,
+        "wickets_left": 10.0,
+        "runs_target": 175.0,
+        "crr": 8.5,
+        "rrr": 8.777777777777779
+      },
+      "winProbability": 0.5990017056465149
+    },
+    {
+      "description": "test row: match 1473479",
+      "input": {
+        "target": 206,
+        "score": 14,
+        "ballsBowled": 9,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 192.0,
+        "balls_left": 111.0,
+        "wickets_left": 10.0,
+        "runs_target": 206.0,
+        "crr": 9.333333333333334,
+        "rrr": 10.378378378378379
+      },
+      "winProbability": 0.5176467895507812
+    },
+    {
+      "description": "test row: match 1473506",
+      "input": {
+        "target": 185,
+        "score": 46,
+        "ballsBowled": 35,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 139.0,
+        "balls_left": 85.0,
+        "wickets_left": 9.0,
+        "runs_target": 185.0,
+        "crr": 7.885714285714286,
+        "rrr": 9.811764705882354
+      },
+      "winProbability": 0.4544324278831482
+    },
+    {
+      "description": "test row: match 1473441",
+      "input": {
+        "target": 210,
+        "score": 121,
+        "ballsBowled": 80,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 89.0,
+        "balls_left": 40.0,
+        "wickets_left": 4.0,
+        "runs_target": 210.0,
+        "crr": 9.075,
+        "rrr": 13.35
+      },
+      "winProbability": 0.06731408834457397
+    },
+    {
+      "description": "test row: match 1527676",
+      "input": {
+        "target": 128,
+        "score": 40,
+        "ballsBowled": 24,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 88.0,
+        "balls_left": 96.0,
+        "wickets_left": 10.0,
+        "runs_target": 128.0,
+        "crr": 10.0,
+        "rrr": 5.5
+      },
+      "winProbability": 0.9172208905220032
+    },
+    {
+      "description": "test row: match 1473474",
+      "input": {
+        "target": 158,
+        "score": 70,
+        "ballsBowled": 50,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 88.0,
+        "balls_left": 70.0,
+        "wickets_left": 9.0,
+        "runs_target": 158.0,
+        "crr": 8.4,
+        "rrr": 7.542857142857143
+      },
+      "winProbability": 0.7421144843101501
+    },
+    {
+      "description": "test row: match 1527688",
+      "input": {
+        "target": 182,
+        "score": 69,
+        "ballsBowled": 44,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 113.0,
+        "balls_left": 76.0,
+        "wickets_left": 8.0,
+        "runs_target": 182.0,
+        "crr": 9.409090909090908,
+        "rrr": 8.921052631578947
+      },
+      "winProbability": 0.6222954392433167
+    },
+    {
+      "description": "test row: match 1527675",
+      "input": {
+        "target": 221,
+        "score": 28,
+        "ballsBowled": 17,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 193.0,
+        "balls_left": 103.0,
+        "wickets_left": 10.0,
+        "runs_target": 221.0,
+        "crr": 9.882352941176471,
+        "rrr": 11.242718446601941
+      },
+      "winProbability": 0.103263258934021
+    },
+    {
+      "description": "test row: match 1529283",
+      "input": {
+        "target": 223,
+        "score": 84,
+        "ballsBowled": 37,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 139.0,
+        "balls_left": 83.0,
+        "wickets_left": 9.0,
+        "runs_target": 223.0,
+        "crr": 13.621621621621621,
+        "rrr": 10.048192771084338
+      },
+      "winProbability": 0.191464364528656
+    },
+    {
+      "description": "test row: match 1473486",
+      "input": {
+        "target": 191,
+        "score": 164,
+        "ballsBowled": 99,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 27.0,
+        "balls_left": 21.0,
+        "wickets_left": 7.0,
+        "runs_target": 191.0,
+        "crr": 9.93939393939394,
+        "rrr": 7.714285714285714
+      },
+      "winProbability": 0.9105925559997559
+    },
+    {
+      "description": "test row: match 1529279",
+      "input": {
+        "target": 229,
+        "score": 138,
+        "ballsBowled": 58,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 91.0,
+        "balls_left": 62.0,
+        "wickets_left": 9.0,
+        "runs_target": 229.0,
+        "crr": 14.275862068965518,
+        "rrr": 8.806451612903226
+      },
+      "winProbability": 0.3409634232521057
+    },
+    {
+      "description": "test row: match 1473463",
+      "input": {
+        "target": 181,
+        "score": 170,
+        "ballsBowled": 106,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 11.0,
+        "balls_left": 14.0,
+        "wickets_left": 7.0,
+        "runs_target": 181.0,
+        "crr": 9.622641509433961,
+        "rrr": 4.714285714285714
+      },
+      "winProbability": 0.9901193380355835
+    },
+    {
+      "description": "test row: match 1529279",
+      "input": {
+        "target": 229,
+        "score": 17,
+        "ballsBowled": 8,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 212.0,
+        "balls_left": 112.0,
+        "wickets_left": 9.0,
+        "runs_target": 229.0,
+        "crr": 12.75,
+        "rrr": 11.357142857142858
+      },
+      "winProbability": 0.05271345376968384
+    },
+    {
+      "description": "test row: match 1473460",
+      "input": {
+        "target": 218,
+        "score": 9,
+        "ballsBowled": 6,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 209.0,
+        "balls_left": 114.0,
+        "wickets_left": 10.0,
+        "runs_target": 218.0,
+        "crr": 9.0,
+        "rrr": 11.0
+      },
+      "winProbability": 0.16599279642105103
+    },
+    {
+      "description": "test row: match 1473484",
+      "input": {
+        "target": 210,
+        "score": 13,
+        "ballsBowled": 9,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 197.0,
+        "balls_left": 111.0,
+        "wickets_left": 10.0,
+        "runs_target": 210.0,
+        "crr": 8.666666666666666,
+        "rrr": 10.64864864864865
+      },
+      "winProbability": 0.23469603061676025
+    },
+    {
+      "description": "test row: match 1527677",
+      "input": {
+        "target": 163,
+        "score": 127,
+        "ballsBowled": 95,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 36.0,
+        "balls_left": 25.0,
+        "wickets_left": 4.0,
+        "runs_target": 163.0,
+        "crr": 8.021052631578947,
+        "rrr": 8.64
+      },
+      "winProbability": 0.5335178375244141
+    },
+    {
+      "description": "test row: match 1473439",
+      "input": {
+        "target": 287,
+        "score": 123,
+        "ballsBowled": 67,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 164.0,
+        "balls_left": 53.0,
+        "wickets_left": 7.0,
+        "runs_target": 287.0,
+        "crr": 11.014925373134329,
+        "rrr": 18.566037735849058
+      },
+      "winProbability": 0.016162455081939697
+    },
+    {
+      "description": "test row: match 1473509",
+      "input": {
+        "target": 229,
+        "score": 153,
+        "ballsBowled": 85,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 76.0,
+        "balls_left": 35.0,
+        "wickets_left": 7.0,
+        "runs_target": 229.0,
+        "crr": 10.8,
+        "rrr": 13.028571428571428
+      },
+      "winProbability": 0.0791822075843811
+    },
+    {
+      "description": "test row: match 1529270",
+      "input": {
+        "target": 195,
+        "score": 113,
+        "ballsBowled": 70,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 82.0,
+        "balls_left": 50.0,
+        "wickets_left": 5.0,
+        "runs_target": 195.0,
+        "crr": 9.685714285714285,
+        "rrr": 9.84
+      },
+      "winProbability": 0.34656429290771484
+    },
+    {
+      "description": "test row: match 1527677",
+      "input": {
+        "target": 163,
+        "score": 30,
+        "ballsBowled": 21,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 133.0,
+        "balls_left": 99.0,
+        "wickets_left": 9.0,
+        "runs_target": 163.0,
+        "crr": 8.571428571428571,
+        "rrr": 8.06060606060606
+      },
+      "winProbability": 0.6448814272880554
+    },
+    {
+      "description": "test row: match 1527693",
+      "input": {
+        "target": 241,
+        "score": 145,
+        "ballsBowled": 87,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 96.0,
+        "balls_left": 33.0,
+        "wickets_left": 7.0,
+        "runs_target": 241.0,
+        "crr": 10.0,
+        "rrr": 17.454545454545453
+      },
+      "winProbability": 0.027693450450897217
+    },
+    {
+      "description": "test row: match 1473506",
+      "input": {
+        "target": 185,
+        "score": 171,
+        "ballsBowled": 105,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 14.0,
+        "balls_left": 15.0,
+        "wickets_left": 7.0,
+        "runs_target": 185.0,
+        "crr": 9.771428571428572,
+        "rrr": 5.6
+      },
+      "winProbability": 0.9804589748382568
+    },
+    {
+      "description": "test row: match 1473470",
+      "input": {
+        "target": 163,
+        "score": 125,
+        "ballsBowled": 82,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 38.0,
+        "balls_left": 38.0,
+        "wickets_left": 7.0,
+        "runs_target": 163.0,
+        "crr": 9.146341463414634,
+        "rrr": 6.0
+      },
+      "winProbability": 0.9693112969398499
+    },
+    {
+      "description": "test row: match 1473467",
+      "input": {
+        "target": 167,
+        "score": 112,
+        "ballsBowled": 90,
+        "wicketsLost": 5
+      },
+      "features": {
+        "runs_left": 55.0,
+        "balls_left": 30.0,
+        "wickets_left": 5.0,
+        "runs_target": 167.0,
+        "crr": 7.466666666666667,
+        "rrr": 11.0
+      },
+      "winProbability": 0.28773224353790283
+    },
+    {
+      "description": "test row: match 1529267",
+      "input": {
+        "target": 196,
+        "score": 178,
+        "ballsBowled": 91,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 18.0,
+        "balls_left": 29.0,
+        "wickets_left": 8.0,
+        "runs_target": 196.0,
+        "crr": 11.736263736263735,
+        "rrr": 3.7241379310344827
+      },
+      "winProbability": 0.9922312498092651
+    },
+    {
+      "description": "test row: match 1527687",
+      "input": {
+        "target": 211,
+        "score": 97,
+        "ballsBowled": 54,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 114.0,
+        "balls_left": 66.0,
+        "wickets_left": 9.0,
+        "runs_target": 211.0,
+        "crr": 10.777777777777779,
+        "rrr": 10.363636363636363
+      },
+      "winProbability": 0.5324320793151855
+    },
+    {
+      "description": "test row: match 1529302",
+      "input": {
+        "target": 188,
+        "score": 119,
+        "ballsBowled": 58,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 69.0,
+        "balls_left": 62.0,
+        "wickets_left": 10.0,
+        "runs_target": 188.0,
+        "crr": 12.310344827586206,
+        "rrr": 6.67741935483871
+      },
+      "winProbability": 0.9161503314971924
+    },
+    {
+      "description": "test row: match 1473456",
+      "input": {
+        "target": 239,
+        "score": 131,
+        "ballsBowled": 62,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 108.0,
+        "balls_left": 58.0,
+        "wickets_left": 8.0,
+        "runs_target": 239.0,
+        "crr": 12.67741935483871,
+        "rrr": 11.172413793103448
+      },
+      "winProbability": 0.06805926561355591
+    },
+    {
+      "description": "test row: match 1473440",
+      "input": {
+        "target": 156,
+        "score": 96,
+        "ballsBowled": 60,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 60.0,
+        "balls_left": 60.0,
+        "wickets_left": 7.0,
+        "runs_target": 156.0,
+        "crr": 9.6,
+        "rrr": 6.0
+      },
+      "winProbability": 0.9580356478691101
+    },
+    {
+      "description": "test row: match 1529300",
+      "input": {
+        "target": 193,
+        "score": 16,
+        "ballsBowled": 11,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 177.0,
+        "balls_left": 109.0,
+        "wickets_left": 10.0,
+        "runs_target": 193.0,
+        "crr": 8.727272727272727,
+        "rrr": 9.743119266055047
+      },
+      "winProbability": 0.37688541412353516
+    },
+    {
+      "description": "test row: match 1473455",
+      "input": {
+        "target": 206,
+        "score": 43,
+        "ballsBowled": 36,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 163.0,
+        "balls_left": 84.0,
+        "wickets_left": 7.0,
+        "runs_target": 206.0,
+        "crr": 7.166666666666667,
+        "rrr": 11.642857142857142
+      },
+      "winProbability": 0.1584622859954834
+    },
+    {
+      "description": "test row: match 1529291",
+      "input": {
+        "target": 156,
+        "score": 28,
+        "ballsBowled": 30,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 128.0,
+        "balls_left": 90.0,
+        "wickets_left": 9.0,
+        "runs_target": 156.0,
+        "crr": 5.6,
+        "rrr": 8.533333333333333
+      },
+      "winProbability": 0.5519415140151978
+    },
+    {
+      "description": "test row: match 1473494",
+      "input": {
+        "target": 180,
+        "score": 141,
+        "ballsBowled": 93,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 39.0,
+        "balls_left": 27.0,
+        "wickets_left": 4.0,
+        "runs_target": 180.0,
+        "crr": 9.096774193548388,
+        "rrr": 8.666666666666666
+      },
+      "winProbability": 0.726934015750885
+    },
+    {
+      "description": "test row: match 1473485",
+      "input": {
+        "target": 205,
+        "score": 4,
+        "ballsBowled": 2,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 201.0,
+        "balls_left": 118.0,
+        "wickets_left": 9.0,
+        "runs_target": 205.0,
+        "crr": 12.0,
+        "rrr": 10.220338983050848
+      },
+      "winProbability": 0.3839341402053833
+    },
+    {
+      "description": "test row: match 1529292",
+      "input": {
+        "target": 236,
+        "score": 159,
+        "ballsBowled": 102,
+        "wicketsLost": 6
+      },
+      "features": {
+        "runs_left": 77.0,
+        "balls_left": 18.0,
+        "wickets_left": 4.0,
+        "runs_target": 236.0,
+        "crr": 9.352941176470589,
+        "rrr": 25.666666666666668
+      },
+      "winProbability": 0.007328033447265625
+    },
+    {
+      "description": "test row: match 1529267",
+      "input": {
+        "target": 196,
+        "score": 161,
+        "ballsBowled": 84,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 35.0,
+        "balls_left": 36.0,
+        "wickets_left": 8.0,
+        "runs_target": 196.0,
+        "crr": 11.5,
+        "rrr": 5.833333333333333
+      },
+      "winProbability": 0.9803535342216492
+    },
+    {
+      "description": "test row: match 1529288",
+      "input": {
+        "target": 166,
+        "score": 8,
+        "ballsBowled": 6,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 158.0,
+        "balls_left": 114.0,
+        "wickets_left": 10.0,
+        "runs_target": 166.0,
+        "crr": 8.0,
+        "rrr": 8.31578947368421
+      },
+      "winProbability": 0.5104820728302002
+    },
+    {
+      "description": "test row: match 1529307",
+      "input": {
+        "target": 221,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 221.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 221.0,
+        "crr": 0.0,
+        "rrr": 11.05
+      },
+      "winProbability": 0.1006656289100647
+    },
+    {
+      "description": "test row: match 1473487",
+      "input": {
+        "target": 218,
+        "score": 82,
+        "ballsBowled": 63,
+        "wicketsLost": 7
+      },
+      "features": {
+        "runs_left": 136.0,
+        "balls_left": 57.0,
+        "wickets_left": 3.0,
+        "runs_target": 218.0,
+        "crr": 7.809523809523809,
+        "rrr": 14.31578947368421
+      },
+      "winProbability": 0.023769855499267578
+    },
+    {
+      "description": "test row: match 1527693",
+      "input": {
+        "target": 241,
+        "score": 129,
+        "ballsBowled": 80,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 112.0,
+        "balls_left": 40.0,
+        "wickets_left": 7.0,
+        "runs_target": 241.0,
+        "crr": 9.675,
+        "rrr": 16.8
+      },
+      "winProbability": 0.028821945190429688
+    },
+    {
+      "description": "test row: match 1527681",
+      "input": {
+        "target": 163,
+        "score": 55,
+        "ballsBowled": 49,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 108.0,
+        "balls_left": 71.0,
+        "wickets_left": 8.0,
+        "runs_target": 163.0,
+        "crr": 6.73469387755102,
+        "rrr": 9.126760563380282
+      },
+      "winProbability": 0.4617198705673218
+    },
+    {
+      "description": "test row: match 1473508",
+      "input": {
+        "target": 102,
+        "score": 30,
+        "ballsBowled": 21,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 72.0,
+        "balls_left": 99.0,
+        "wickets_left": 9.0,
+        "runs_target": 102.0,
+        "crr": 8.571428571428571,
+        "rrr": 4.363636363636363
+      },
+      "winProbability": 0.9932501316070557
+    },
+    {
+      "description": "test row: match 1529277",
+      "input": {
+        "target": 206,
+        "score": 0,
+        "ballsBowled": 0,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 206.0,
+        "balls_left": 120.0,
+        "wickets_left": 10.0,
+        "runs_target": 206.0,
+        "crr": 0.0,
+        "rrr": 10.3
+      },
+      "winProbability": 0.4264765977859497
+    },
+    {
+      "description": "test row: match 1527687",
+      "input": {
+        "target": 211,
+        "score": 131,
+        "ballsBowled": 79,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 80.0,
+        "balls_left": 41.0,
+        "wickets_left": 7.0,
+        "runs_target": 211.0,
+        "crr": 9.949367088607595,
+        "rrr": 11.707317073170731
+      },
+      "winProbability": 0.4571225643157959
+    },
+    {
+      "description": "test row: match 1529266",
+      "input": {
+        "target": 147,
+        "score": 85,
+        "ballsBowled": 58,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 62.0,
+        "balls_left": 62.0,
+        "wickets_left": 8.0,
+        "runs_target": 147.0,
+        "crr": 8.793103448275861,
+        "rrr": 6.0
+      },
+      "winProbability": 0.9571653008460999
+    },
+    {
+      "description": "test row: match 1473451",
+      "input": {
+        "target": 170,
+        "score": 107,
+        "ballsBowled": 75,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 63.0,
+        "balls_left": 45.0,
+        "wickets_left": 8.0,
+        "runs_target": 170.0,
+        "crr": 8.56,
+        "rrr": 8.4
+      },
+      "winProbability": 0.730005145072937
+    },
+    {
+      "description": "test row: match 1473447",
+      "input": {
+        "target": 164,
+        "score": 74,
+        "ballsBowled": 47,
+        "wicketsLost": 0
+      },
+      "features": {
+        "runs_left": 90.0,
+        "balls_left": 73.0,
+        "wickets_left": 10.0,
+        "runs_target": 164.0,
+        "crr": 9.446808510638299,
+        "rrr": 7.397260273972603
+      },
+      "winProbability": 0.8501679301261902
+    },
+    {
+      "description": "test row: match 1473485",
+      "input": {
+        "target": 205,
+        "score": 29,
+        "ballsBowled": 19,
+        "wicketsLost": 1
+      },
+      "features": {
+        "runs_left": 176.0,
+        "balls_left": 101.0,
+        "wickets_left": 9.0,
+        "runs_target": 205.0,
+        "crr": 9.157894736842104,
+        "rrr": 10.455445544554456
+      },
+      "winProbability": 0.35915708541870117
+    },
+    {
+      "description": "test row: match 1473509",
+      "input": {
+        "target": 229,
+        "score": 165,
+        "ballsBowled": 91,
+        "wicketsLost": 3
+      },
+      "features": {
+        "runs_left": 64.0,
+        "balls_left": 29.0,
+        "wickets_left": 7.0,
+        "runs_target": 229.0,
+        "crr": 10.87912087912088,
+        "rrr": 13.241379310344827
+      },
+      "winProbability": 0.1087409257888794
+    },
+    {
+      "description": "test row: match 1473490",
+      "input": {
+        "target": 207,
+        "score": 65,
+        "ballsBowled": 40,
+        "wicketsLost": 2
+      },
+      "features": {
+        "runs_left": 142.0,
+        "balls_left": 80.0,
+        "wickets_left": 8.0,
+        "runs_target": 207.0,
+        "crr": 9.75,
+        "rrr": 10.65
+      },
+      "winProbability": 0.19220465421676636
+    }
+  ]
+}

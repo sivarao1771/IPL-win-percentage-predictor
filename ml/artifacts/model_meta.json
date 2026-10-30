@@ -1,0 +1,96 @@
+{
+  "model_version": "ipl-chase-hgb-d81f5e586f86",
+  "model_sha256": "d81f5e586f866a8d496b4b9e78f40a85a764e914a7d84cf750eb3d6fd0508dfb",
+  "description": "P(chasing team wins) in an IPL second innings, from the current match state.",
+  "input": {
+    "name": "features",
+    "dtype": "float32",
+    "shape": [
+      null,
+      6
+    ],
+    "feature_order": [
+      "runs_left",
+      "balls_left",
+      "wickets_left",
+      "runs_target",
+      "crr",
+      "rrr"
+    ]
+  },
+  "output": {
+    "name": "probabilities",
+    "dtype": "float32",
+    "shape": [
+      null,
+      2
+    ],
+    "win_probability_column": 1
+  },
+  "features": {
+    "runs_left": "target - score",
+    "balls_left": "120 - ballsBowled",
+    "wickets_left": "10 - wicketsLost",
+    "runs_target": "target",
+    "crr": "score * 6 / ballsBowled, or 0 when ballsBowled is 0",
+    "rrr": "runsLeft * 6 / ballsLeft",
+    "note": "Compute in float64 in exactly this order, then convert to float32."
+  },
+  "input_contract": {
+    "target": {
+      "min": 1,
+      "max": 300,
+      "integer": true,
+      "message": "target must be between 1 and 300"
+    },
+    "score": {
+      "min": 0,
+      "max": "target - 1",
+      "integer": true,
+      "message": "score must be between 0 and target - 1"
+    },
+    "ballsBowled": {
+      "min": 0,
+      "max": 119,
+      "integer": true,
+      "message": "ballsBowled must be between 0 and 119"
+    },
+    "wicketsLost": {
+      "min": 0,
+      "max": 9,
+      "integer": true,
+      "message": "wicketsLost must be between 0 and 9"
+    }
+  },
+  "training_range_note": "Training targets ranged from 68 to 288. Outside that range the trees repeat their nearest learned values; they do not extrapolate.",
+  "opset": {
+    "ai.onnx": 17,
+    "ai.onnx.ml": 1
+  },
+  "parity": {
+    "tolerance": 1e-05,
+    "max_abs_diff": {
+      "test rows": 1.4259899439039714e-07,
+      "validation rows": 1.680192351360965e-07,
+      "edge grid": 2.0554989377252753e-07
+    }
+  },
+  "provenance": {
+    "trained_on": "train + validation (2008-2024)",
+    "params": {
+      "learning_rate": 0.1,
+      "max_iter": 50,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "monotonic": true
+    },
+    "training_code_commit": "0a2f203ff81758462740b673121d1a7e866598c9",
+    "dataset_sha256": "425c40c4eb60f06ca2eb05f27bf84bdd737b7c3a008afbf44d49619e0d1a72b5",
+    "packages": {
+      "scikit-learn": "1.9.1",
+      "skl2onnx": "1.20.0",
+      "onnx": "1.23.2",
+      "onnxruntime": "1.31.1"
+    }
+  }
+}

@@ -1,0 +1,2203 @@
+{
+  "dataset": {
+    "file": "IPL.csv",
+    "sha256": "425c40c4eb60f06ca2eb05f27bf84bdd737b7c3a008afbf44d49619e0d1a72b5",
+    "rows": 295732,
+    "matches": 1243,
+    "first_date": "2008-04-18",
+    "last_date": "2026-05-31"
+  },
+  "seed": 42,
+  "packages": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1"
+  },
+  "git": {
+    "commit": "0a2f203ff81758462740b673121d1a7e866598c9",
+    "uncommitted_changes": false
+  },
+  "splits": {
+    "train": {
+      "seasons": "2008-2023",
+      "matches": 977,
+      "rows": 113871,
+      "chase_win_rate_by_match": 0.5425
+    },
+    "val": {
+      "seasons": "2024-2024",
+      "matches": 70,
+      "rows": 8108,
+      "chase_win_rate_by_match": 0.5143
+    },
+    "test": {
+      "seasons": "2025-2026",
+      "matches": 138,
+      "rows": 15914,
+      "chase_win_rate_by_match": 0.5797
+    }
+  },
+  "selection": {
+    "selection_metric": "validation log loss",
+    "m1_rule": "Keep grid settings whose validation log loss is within 1% of the lowest. Among those, prefer monotonic, then the simplest by trees x leaves, then the higher learning rate.",
+    "m2_rule": "M2 kept only if its validation log loss is at least 1% lower than the chosen M1",
+    "baselines": {
+      "B0 constant": {
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.4834731129748397,
+          "log_loss": 0.6957759920939498,
+          "brier": 0.2513132567824399
+        },
+        "by_phase": {
+          "overs 1-6": {
+            "rows": 2702,
+            "accuracy": 0.5148038490007402,
+            "log_loss": 0.6928535138921778,
+            "brier": 0.24985307626159217
+          },
+          "overs 7-15": {
+            "rows": 3806,
+            "accuracy": 0.4976353126642144,
+            "log_loss": 0.6944549659984529,
+            "brier": 0.25065322223675646
+          },
+          "overs 16-20": {
+            "rows": 1600,
+            "accuracy": 0.396875,
+            "log_loss": 0.7038537179818557,
+            "brier": 0.25534919381256577
+          }
+        },
+        "reliability": [
+          {
+            "bucket": "0-10%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "10-20%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "20-30%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "30-40%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "40-50%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "50-60%",
+            "rows": 8108,
+            "mean_predicted": 0.5233026846168033,
+            "actual_win_rate": 0.4834731129748397
+          },
+          {
+            "bucket": "60-70%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "70-80%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "80-90%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          },
+          {
+            "bucket": "90-100%",
+            "rows": 0,
+            "mean_predicted": null,
+            "actual_win_rate": null
+          }
+        ]
+      },
+      "B1 logistic": {
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8193142575234337,
+          "log_loss": 0.41706500708136074,
+          "brier": 0.13129981996544376
+        },
+        "by_phase": {
+          "overs 1-6": {
+            "rows": 2702,
+            "accuracy": 0.7805329385640266,
+            "log_loss": 0.5096404528103353,
+            "brier": 0.16283993822424603
+          },
+          "overs 7-15": {
+            "rows": 3806,
+            "accuracy": 0.8265895953757225,
+            "log_loss": 0.39023590502836386,
+            "brier": 0.1227046146259688
+          },
+          "overs 16-20": {
+            "rows": 1600,
+            "accuracy": 0.8675,
+            "log_loss": 0.32454794961512107,
+            "brier": 0.09848228995716747
+          }
+        },
+        "reliability": [
+          {
+            "bucket": "0-10%",
+            "rows": 2189,
+            "mean_predicted": 0.04576329484523926,
+            "actual_win_rate": 0.0877112836911832
+          },
+          {
+            "bucket": "10-20%",
+            "rows": 1219,
+            "mean_predicted": 0.1441667398057383,
+            "actual_win_rate": 0.20836751435602954
+          },
+          {
+            "bucket": "20-30%",
+            "rows": 658,
+            "mean_predicted": 0.24360815736841648,
+            "actual_win_rate": 0.3586626139817629
+          },
+          {
+            "bucket": "30-40%",
+            "rows": 431,
+            "mean_predicted": 0.3542562255726613,
+            "actual_win_rate": 0.3990719257540603
+          },
+          {
+            "bucket": "40-50%",
+            "rows": 462,
+            "mean_predicted": 0.45278877239206655,
+            "actual_win_rate": 0.5714285714285714
+          },
+          {
+            "bucket": "50-60%",
+            "rows": 543,
+            "mean_predicted": 0.5483631515810283,
+            "actual_win_rate": 0.6703499079189686
+          },
+          {
+            "bucket": "60-70%",
+            "rows": 538,
+            "mean_predicted": 0.653805161940564,
+            "actual_win_rate": 0.8271375464684015
+          },
+          {
+            "bucket": "70-80%",
+            "rows": 513,
+            "mean_predicted": 0.7531922976640698,
+            "actual_win_rate": 0.8791423001949318
+          },
+          {
+            "bucket": "80-90%",
+            "rows": 796,
+            "mean_predicted": 0.8538754753131962,
+            "actual_win_rate": 0.9836683417085427
+          },
+          {
+            "bucket": "90-100%",
+            "rows": 759,
+            "mean_predicted": 0.9458809081901832,
+            "actual_win_rate": 1.0
+          }
+        ]
+      }
+    },
+    "m1_grid": [
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 25,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8169708929452393,
+          "log_loss": 0.5530340925998767,
+          "brier": 0.18195293735761137
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.062018699666759755,
+          0.25547827472385576
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 25,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8168475579674396,
+          "log_loss": 0.5528181754358276,
+          "brier": 0.18186963012192262
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.06190158968672448,
+          0.2552394946752487
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 25,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8251110014800197,
+          "log_loss": 0.5420787147285319,
+          "brier": 0.17679662743459054
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.051243607135916226,
+          0.24479247372823046
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 25,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8225209669462259,
+          "log_loss": 0.5436301671135421,
+          "brier": 0.17757012218933166
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.05500561312869692,
+          0.24453411692245453
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 25,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8296743956586088,
+          "log_loss": 0.5352108335157184,
+          "brier": 0.17354765314371376
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.044054880227146216,
+          0.23601199860725258
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 25,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8247409965466206,
+          "log_loss": 0.5395206201681314,
+          "brier": 0.17569028510129803
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.05037439889780827,
+          0.24031206321286258
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8225209669462259,
+          "log_loss": 0.48633896533817716,
+          "brier": 0.15373849761308037
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.012589174100373326,
+          0.17283733056459857
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8207942772570301,
+          "log_loss": 0.4878456029006791,
+          "brier": 0.15450385341638956
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.01397765121187265,
+          0.17528489642770864
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8253576714356191,
+          "log_loss": 0.472867492204027,
+          "brier": 0.14817253842338507
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0002868339281143232,
+          0.15803944518326543
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8217809570794278,
+          "log_loss": 0.47596411848361886,
+          "brier": 0.14960410474981545
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.003770576510387372,
+          0.16322297609818603
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8275777010360138,
+          "log_loss": 0.46532191404802953,
+          "brier": 0.14508234430595984
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.005496299270375564,
+          0.1493951998067529
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8246176615688209,
+          "log_loss": 0.4703290308670729,
+          "brier": 0.14745965417550663
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0013149767507536403,
+          0.15551132254064035
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8297977306364085,
+          "log_loss": 0.42754389412262095,
+          "brier": 0.13372919598645805
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.030165974559595923,
+          0.10818850525904895
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8286877158362111,
+          "log_loss": 0.4294192261918658,
+          "brier": 0.13434372798220476
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03251118607773577,
+          0.11209592819708082
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8265910212136162,
+          "log_loss": 0.417148669004972,
+          "brier": 0.1307352026958851
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03268690258139686,
+          0.09211611735036176
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8316477553034041,
+          "log_loss": 0.41831809470671616,
+          "brier": 0.1310858311122668
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03910883646020184,
+          0.09847382697668564
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 100,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8256043413912185,
+          "log_loss": 0.40561658654205984,
+          "brier": 0.12705340496746972
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03655125714832802,
+          0.06963601112853286
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 100,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8333744449925999,
+          "log_loss": 0.4132469253026282,
+          "brier": 0.12972070453687295
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.037922668723371245,
+          0.0884097462602403
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 300,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8306610754810064,
+          "log_loss": 0.38594269383488067,
+          "brier": 0.12270342414942519
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.01866096523671072,
+          0.02828374481202797
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 300,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.831277750370005,
+          "log_loss": 0.3831970819785839,
+          "brier": 0.12203539328096943
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.024503355667438748,
+          0.026971697769413782
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 300,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8256043413912185,
+          "log_loss": 0.3861616563402563,
+          "brier": 0.12065370417729812
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.006201525853448837,
+          0.02151540803356624
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 300,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8336211149481993,
+          "log_loss": 0.38064528467297143,
+          "brier": 0.11911079773491033
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.007708050906995939,
+          0.009029954936191928
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 300,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8279477059694129,
+          "log_loss": 0.4020096639237829,
+          "brier": 0.12341162679743073
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.011895870431228042,
+          0.06764217326960492
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.02,
+          "max_iter": 300,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8284410458806117,
+          "log_loss": 0.3896834342275087,
+          "brier": 0.12056512727929881
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.007981105215350436,
+          0.034043804977855384
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 25,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8269610261470153,
+          "log_loss": 0.46479271337798406,
+          "brier": 0.14567813555142042
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.003983720329426555,
+          0.14945605168145346
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 25,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.823754316724223,
+          "log_loss": 0.4666234781184697,
+          "brier": 0.1465799706075278
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.002890758374894995,
+          0.1510148420493789
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 25,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.823754316724223,
+          "log_loss": 0.4522276202022772,
+          "brier": 0.1410037537542562
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.012566424156020552,
+          0.13529548238998954
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 25,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8244943265910212,
+          "log_loss": 0.4547156398281639,
+          "brier": 0.14209313377872884
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.011319049860805046,
+          0.1379994258022906
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 25,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8251110014800197,
+          "log_loss": 0.44408287724877316,
+          "brier": 0.13803653665993207
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.01821128570145053,
+          0.12345733181621865
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 25,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8293043907252097,
+          "log_loss": 0.4490852091409763,
+          "brier": 0.14016575894254177
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.014050094638537593,
+          0.13016249172478933
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8278243709916132,
+          "log_loss": 0.4141454800662095,
+          "brier": 0.13015990752518186
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.04276905442827947,
+          0.0976969821500476
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8281943759250123,
+          "log_loss": 0.4153399221558023,
+          "brier": 0.13050818978245288
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.04158934569885709,
+          0.09754247526806707
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.827084361124815,
+          "log_loss": 0.40198918646946075,
+          "brier": 0.12706642511403943
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03353509699514612,
+          0.06421061161710744
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8277010360138135,
+          "log_loss": 0.404297352599949,
+          "brier": 0.1277891777087669
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0475407732003288,
+          0.08120313671383686
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8240009866798224,
+          "log_loss": 0.39510151439791497,
+          "brier": 0.12495584078220463
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.032885729799003796,
+          0.051557833520123636
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8294277257030094,
+          "log_loss": 0.39718529480050446,
+          "brier": 0.12566365720667
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.04412608673821588,
+          0.06395390041425107
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8281943759250123,
+          "log_loss": 0.3869513636281573,
+          "brier": 0.12367592021311685
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03036641584170369,
+          0.03797216252987515
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8295510606808091,
+          "log_loss": 0.38599524042542316,
+          "brier": 0.12333554082583273
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03478409864341419,
+          0.039725277895700385
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8243709916132215,
+          "log_loss": 0.3900105933776961,
+          "brier": 0.12249524095335046
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.00170563155502775,
+          0.023514932182371707
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8322644301924026,
+          "log_loss": 0.3818601793478039,
+          "brier": 0.12080655172613959
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.014681704135045527,
+          0.016447808115910435
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8230143068574247,
+          "log_loss": 0.40050496984893036,
+          "brier": 0.12475438130670775
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.002128881910139975,
+          0.0458704293177257
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8321410952146029,
+          "log_loss": 0.3810039260623882,
+          "brier": 0.11957063670584435
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0039662830440754795,
+          0.005345594246114082
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 300,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8294277257030094,
+          "log_loss": 0.38478079847967106,
+          "brier": 0.11892085273552376
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.021696694633750256,
+          0.040679381790718526
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 300,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8365811544153922,
+          "log_loss": 0.38102527230707944,
+          "brier": 0.11680623900844225
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.025824782803120064,
+          0.03761585507887278
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 300,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8226443019240256,
+          "log_loss": 0.40918086428491696,
+          "brier": 0.12379430925083523
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.025867235222359113,
+          0.10368518923529915
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 300,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8288110508140109,
+          "log_loss": 0.4047281748210641,
+          "brier": 0.12263632704842264
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0273030889363515,
+          0.09316610652691527
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 300,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8101874691662555,
+          "log_loss": 0.44469493485843425,
+          "brier": 0.13118080151643688
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.016477558459938337,
+          0.1716058064151755
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.05,
+          "max_iter": 300,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8151208682782437,
+          "log_loss": 0.433376747938441,
+          "brier": 0.1288621690120435
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.023392888219410504,
+          0.153012654797139
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 25,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8295510606808091,
+          "log_loss": 0.41235783420911215,
+          "brier": 0.12991703648747732
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03661050466323927,
+          0.0848821638653714
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 25,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.82918105574741,
+          "log_loss": 0.41456493879935896,
+          "brier": 0.1302674958326192
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.043085388044939374,
+          0.09733340363916872
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 25,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8267143561914159,
+          "log_loss": 0.404199472550147,
+          "brier": 0.12808123954510275
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03348284659937533,
+          0.06775423691682866
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 25,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.828317710902812,
+          "log_loss": 0.40317136067978043,
+          "brier": 0.1274874333422822
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.04608145430637507,
+          0.0781923323033694
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 25,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8268376911692156,
+          "log_loss": 0.3945926133324047,
+          "brier": 0.12483552507088506
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03360698265492403,
+          0.048948583634246215
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 25,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8307844104588061,
+          "log_loss": 0.39648367716418853,
+          "brier": 0.1254131828945034
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.04392895989988789,
+          0.062338678573768395
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8281943759250123,
+          "log_loss": 0.38613585494569025,
+          "brier": 0.12328569632203605
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0287865307082659,
+          0.034397485765862316
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8277010360138135,
+          "log_loss": 0.3892912045668747,
+          "brier": 0.1244611245481089
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.03372275691609884,
+          0.04716249285113261
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8251110014800197,
+          "log_loss": 0.3925377485906499,
+          "brier": 0.12359547479884166
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0012872984126340388,
+          0.029476021016683493
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8339911198815985,
+          "log_loss": 0.3828631192071316,
+          "brier": 0.1213685638596428
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.017757759790543438,
+          0.024285180310216203
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8267143561914159,
+          "log_loss": 0.39479470364739894,
+          "brier": 0.12298479321682113
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.008267026606085958,
+          0.04256073139182995
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8267143561914159,
+          "log_loss": 0.38026944436956617,
+          "brier": 0.11957700098803167
+        },
+        "log_loss_diff_vs_best_ci95": [
+          0.0,
+          0.0
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8301677355698076,
+          "log_loss": 0.3803702181088398,
+          "brier": 0.11926324359561165
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.009804374974744193,
+          0.0115595249113917
+        ],
+        "near_best": true
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8309077454366058,
+          "log_loss": 0.3847469131133671,
+          "brier": 0.12027721818632327
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.007995763962175634,
+          0.020249441302305746
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8267143561914159,
+          "log_loss": 0.39874064023073724,
+          "brier": 0.12298874484392279
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.015366763793303507,
+          0.06492283920565667
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8322644301924026,
+          "log_loss": 0.3860373416862907,
+          "brier": 0.11897146662610746
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.026626476152030194,
+          0.047555538896308
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.820424272323631,
+          "log_loss": 0.4214078868410748,
+          "brier": 0.12678114503110194
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.021398964098386437,
+          0.12386234035706974
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.814997533300444,
+          "log_loss": 0.4101120454915295,
+          "brier": 0.12603243265679426
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.018191679866126482,
+          0.09174990030223462
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 300,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8254810064134188,
+          "log_loss": 0.4027007441940375,
+          "brier": 0.12180871398645306
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.034559341132139106,
+          0.09795804903966845
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 300,
+          "max_leaf_nodes": 7,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.823754316724223,
+          "log_loss": 0.40209416912500434,
+          "brier": 0.12260149929340249
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.029876553302432433,
+          0.09099755358853868
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 300,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.817094227923039,
+          "log_loss": 0.44566825244241703,
+          "brier": 0.13008520753893846
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.01974737736069606,
+          0.1815460080669858
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 300,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8178342377898372,
+          "log_loss": 0.4420063546886484,
+          "brier": 0.1281053717170216
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.025399700343628442,
+          0.18304025218071504
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 300,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": false
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8068574247656636,
+          "log_loss": 0.493610188002457,
+          "brier": 0.13891365722701102
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.0012448004601275226,
+          0.27057623554032256
+        ],
+        "near_best": false
+      },
+      {
+        "params": {
+          "learning_rate": 0.1,
+          "max_iter": 300,
+          "max_leaf_nodes": 31,
+          "min_samples_leaf": 100,
+          "monotonic": true
+        },
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8073507646768624,
+          "log_loss": 0.5023030823521532,
+          "brier": 0.13818469380981865
+        },
+        "log_loss_diff_vs_best_ci95": [
+          -0.002293172014848883,
+          0.29730715470555014
+        ],
+        "near_best": false
+      }
+    ],
+    "m1_lowest_log_loss": {
+      "params": {
+        "learning_rate": 0.1,
+        "max_iter": 50,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 100,
+        "monotonic": true
+      },
+      "scores": {
+        "rows": 8108,
+        "accuracy": 0.8267143561914159,
+        "log_loss": 0.38026944436956617,
+        "brier": 0.11957700098803167
+      },
+      "at_grid_edge": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31
+      }
+    },
+    "m1_near_best": 8,
+    "m1_not_clearly_worse": 63,
+    "m2": {
+      "params": {
+        "learning_rate": 0.1,
+        "max_iter": 50,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 100,
+        "monotonic": true
+      },
+      "scores": {
+        "rows": 8108,
+        "accuracy": 0.8075974346324618,
+        "log_loss": 0.41980290369464046,
+        "brier": 0.1365455122332401
+      }
+    },
+    "chosen": {
+      "family": "M1",
+      "params": {
+        "learning_rate": 0.1,
+        "max_iter": 50,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 100,
+        "monotonic": true
+      },
+      "validation": {
+        "scores": {
+          "rows": 8108,
+          "accuracy": 0.8339911198815985,
+          "log_loss": 0.3828631192071316,
+          "brier": 0.1213685638596428
+        },
+        "by_phase": {
+          "overs 1-6": {
+            "rows": 2702,
+            "accuracy": 0.7908956328645448,
+            "log_loss": 0.4622850475955407,
+            "brier": 0.1477060924074069
+          },
+          "overs 7-15": {
+            "rows": 3806,
+            "accuracy": 0.846820809248555,
+            "log_loss": 0.38017148916465926,
+            "brier": 0.11878833032147253
+          },
+          "overs 16-20": {
+            "rows": 1600,
+            "accuracy": 0.87625,
+            "log_loss": 0.2551420526047373,
+            "brier": 0.08302879305352868
+          }
+        },
+        "reliability": [
+          {
+            "bucket": "0-10%",
+            "rows": 2070,
+            "mean_predicted": 0.032657035706877745,
+            "actual_win_rate": 0.052657004830917876
+          },
+          {
+            "bucket": "10-20%",
+            "rows": 1016,
+            "mean_predicted": 0.14665363682815388,
+            "actual_win_rate": 0.20078740157480315
+          },
+          {
+            "bucket": "20-30%",
+            "rows": 639,
+            "mean_predicted": 0.25420476698488237,
+            "actual_win_rate": 0.3333333333333333
+          },
+          {
+            "bucket": "30-40%",
+            "rows": 482,
+            "mean_predicted": 0.34693515333274494,
+            "actual_win_rate": 0.3630705394190871
+          },
+          {
+            "bucket": "40-50%",
+            "rows": 555,
+            "mean_predicted": 0.44877775722761776,
+            "actual_win_rate": 0.4666666666666667
+          },
+          {
+            "bucket": "50-60%",
+            "rows": 511,
+            "mean_predicted": 0.5515160898479237,
+            "actual_win_rate": 0.6379647749510763
+          },
+          {
+            "bucket": "60-70%",
+            "rows": 583,
+            "mean_predicted": 0.6520533683606559,
+            "actual_win_rate": 0.8061749571183533
+          },
+          {
+            "bucket": "70-80%",
+            "rows": 536,
+            "mean_predicted": 0.7463627999334589,
+            "actual_win_rate": 0.8899253731343284
+          },
+          {
+            "bucket": "80-90%",
+            "rows": 514,
+            "mean_predicted": 0.8547891496902164,
+            "actual_win_rate": 0.9455252918287937
+          },
+          {
+            "bucket": "90-100%",
+            "rows": 1202,
+            "mean_predicted": 0.969485389806751,
+            "actual_win_rate": 0.9991680532445923
+          }
+        ]
+      }
+    }
+  },
+  "test": {
+    "B0 constant": {
+      "scores": {
+        "rows": 15914,
+        "accuracy": 0.55944451426417,
+        "log_loss": 0.6890870348471806,
+        "brier": 0.24797096103253025
+      },
+      "ci95": {
+        "accuracy": [
+          0.4705972744173561,
+          0.6405826255551583
+        ],
+        "log_loss": [
+          0.6823795235849468,
+          0.6964318430071041
+        ],
+        "brier": [
+          0.24461911405235137,
+          0.2516412751160048
+        ]
+      },
+      "by_phase": {
+        "overs 1-6": {
+          "rows": 5341,
+          "accuracy": 0.5779816513761468,
+          "log_loss": 0.6875546100227693,
+          "brier": 0.2472051846783442
+        },
+        "overs 7-15": {
+          "rows": 7595,
+          "accuracy": 0.5711652402896642,
+          "log_loss": 0.6881181079080803,
+          "brier": 0.24748677327527313
+        },
+        "overs 16-20": {
+          "rows": 2978,
+          "accuracy": 0.49630624580255206,
+          "log_loss": 0.6943065382352421,
+          "brier": 0.25057922749461053
+        }
+      },
+      "reliability": [
+        {
+          "bucket": "0-10%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "10-20%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "20-30%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "30-40%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "40-50%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "50-60%",
+          "rows": 15914,
+          "mean_predicted": 0.5206551947466365,
+          "actual_win_rate": 0.55944451426417
+        },
+        {
+          "bucket": "60-70%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "70-80%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "80-90%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        },
+        {
+          "bucket": "90-100%",
+          "rows": 0,
+          "mean_predicted": null,
+          "actual_win_rate": null
+        }
+      ]
+    },
+    "B1 logistic": {
+      "scores": {
+        "rows": 15914,
+        "accuracy": 0.7834611034309413,
+        "log_loss": 0.46945749057737834,
+        "brier": 0.1514544701853803
+      },
+      "ci95": {
+        "accuracy": [
+          0.7371214961056144,
+          0.8315690837122997
+        ],
+        "log_loss": [
+          0.3954699628447268,
+          0.5535709571249657
+        ],
+        "brier": [
+          0.12472276915119043,
+          0.178857793305048
+        ]
+      },
+      "by_phase": {
+        "overs 1-6": {
+          "rows": 5341,
+          "accuracy": 0.6876989327841229,
+          "log_loss": 0.6477793795192645,
+          "brier": 0.21525930639539062
+        },
+        "overs 7-15": {
+          "rows": 7595,
+          "accuracy": 0.8208031599736669,
+          "log_loss": 0.39889873278885113,
+          "brier": 0.12645958040742522
+        },
+        "overs 16-20": {
+          "rows": 2978,
+          "accuracy": 0.8599731363331095,
+          "log_loss": 0.32959065262078,
+          "brier": 0.10076761916654359
+        }
+      },
+      "reliability": [
+        {
+          "bucket": "0-10%",
+          "rows": 3877,
+          "mean_predicted": 0.03940943731744687,
+          "actual_win_rate": 0.08847046685581635
+        },
+        {
+          "bucket": "10-20%",
+          "rows": 1874,
+          "mean_predicted": 0.14574271995920127,
+          "actual_win_rate": 0.2854855923159018
+        },
+        {
+          "bucket": "20-30%",
+          "rows": 1413,
+          "mean_predicted": 0.25027839042198885,
+          "actual_win_rate": 0.4444444444444444
+        },
+        {
+          "bucket": "30-40%",
+          "rows": 1281,
+          "mean_predicted": 0.3506066692843277,
+          "actual_win_rate": 0.6065573770491803
+        },
+        {
+          "bucket": "40-50%",
+          "rows": 1032,
+          "mean_predicted": 0.4492170866145644,
+          "actual_win_rate": 0.6521317829457365
+        },
+        {
+          "bucket": "50-60%",
+          "rows": 975,
+          "mean_predicted": 0.5499470761494759,
+          "actual_win_rate": 0.7712820512820513
+        },
+        {
+          "bucket": "60-70%",
+          "rows": 980,
+          "mean_predicted": 0.6518818847987117,
+          "actual_win_rate": 0.9061224489795918
+        },
+        {
+          "bucket": "70-80%",
+          "rows": 1415,
+          "mean_predicted": 0.7533349048964969,
+          "actual_win_rate": 0.9477031802120142
+        },
+        {
+          "bucket": "80-90%",
+          "rows": 1791,
+          "mean_predicted": 0.8505337523854957,
+          "actual_win_rate": 0.9759910664433278
+        },
+        {
+          "bucket": "90-100%",
+          "rows": 1276,
+          "mean_predicted": 0.9460446017102389,
+          "actual_win_rate": 0.9545454545454546
+        }
+      ]
+    },
+    "Final model (M1)": {
+      "scores": {
+        "rows": 15914,
+        "accuracy": 0.7746009802689455,
+        "log_loss": 0.4845835409153434,
+        "brier": 0.15606152993945077
+      },
+      "ci95": {
+        "accuracy": [
+          0.7210924791263059,
+          0.8252873324860929
+        ],
+        "log_loss": [
+          0.38947677657483953,
+          0.5934047517786257
+        ],
+        "brier": [
+          0.12351680729515667,
+          0.1921702015813676
+        ]
+      },
+      "by_phase": {
+        "overs 1-6": {
+          "rows": 5341,
+          "accuracy": 0.7002434001123385,
+          "log_loss": 0.6349163426793973,
+          "brier": 0.20646045644779207
+        },
+        "overs 7-15": {
+          "rows": 7595,
+          "accuracy": 0.7882817643186307,
+          "log_loss": 0.4713639797243834,
+          "brier": 0.1504839011150196
+        },
+        "overs 16-20": {
+          "rows": 2978,
+          "accuracy": 0.8730691739422431,
+          "log_loss": 0.24867859565796582,
+          "brier": 0.0798967967092639
+        }
+      },
+      "reliability": [
+        {
+          "bucket": "0-10%",
+          "rows": 4607,
+          "mean_predicted": 0.04082094032081548,
+          "actual_win_rate": 0.1172129368352507
+        },
+        {
+          "bucket": "10-20%",
+          "rows": 1374,
+          "mean_predicted": 0.14231005061787938,
+          "actual_win_rate": 0.3675400291120815
+        },
+        {
+          "bucket": "20-30%",
+          "rows": 965,
+          "mean_predicted": 0.24998499999924564,
+          "actual_win_rate": 0.4310880829015544
+        },
+        {
+          "bucket": "30-40%",
+          "rows": 1198,
+          "mean_predicted": 0.34787983929145117,
+          "actual_win_rate": 0.498330550918197
+        },
+        {
+          "bucket": "40-50%",
+          "rows": 1210,
+          "mean_predicted": 0.4496410199009994,
+          "actual_win_rate": 0.7495867768595041
+        },
+        {
+          "bucket": "50-60%",
+          "rows": 1028,
+          "mean_predicted": 0.5500913461255356,
+          "actual_win_rate": 0.7752918287937743
+        },
+        {
+          "bucket": "60-70%",
+          "rows": 972,
+          "mean_predicted": 0.6485782385102186,
+          "actual_win_rate": 0.9146090534979424
+        },
+        {
+          "bucket": "70-80%",
+          "rows": 1125,
+          "mean_predicted": 0.7519411018875282,
+          "actual_win_rate": 0.8657777777777778
+        },
+        {
+          "bucket": "80-90%",
+          "rows": 1058,
+          "mean_predicted": 0.852441198670974,
+          "actual_win_rate": 0.943289224952741
+        },
+        {
+          "bucket": "90-100%",
+          "rows": 2377,
+          "mean_predicted": 0.963653688249951,
+          "actual_win_rate": 0.9591922591501894
+        }
+      ]
+    }
+  },
+  "test_final_vs_logistic": {
+    "reference": "B1 logistic",
+    "log_loss_diff_ci95": [
+      -0.038880967616843086,
+      0.07431775679821953
+    ]
+  },
+  "final_model": {
+    "name": "Final model (M1)",
+    "columns": [
+      "runs_left",
+      "balls_left",
+      "wickets_left",
+      "runs_target",
+      "crr",
+      "rrr"
+    ],
+    "params": {
+      "learning_rate": 0.1,
+      "max_iter": 50,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "monotonic": true
+    },
+    "trained_on": "train + validation (2008-2024)"
+  },
+  "leakage_demo": [
+    {
+      "split": "Random rows (old notebook method)",
+      "model": "Final model settings",
+      "features": "match state",
+      "test_matches_also_in_train": 1185,
+      "test_matches": 1185,
+      "rows": 27579,
+      "accuracy": 0.7948076434968635,
+      "log_loss": 0.4123621691882822,
+      "brier": 0.13586497373713588
+    },
+    {
+      "split": "Random rows (old notebook method)",
+      "model": "Final model settings",
+      "features": "match state + team/city",
+      "test_matches_also_in_train": 1185,
+      "test_matches": 1185,
+      "rows": 27579,
+      "accuracy": 0.823525145944378,
+      "log_loss": 0.37528770420608026,
+      "brier": 0.11988922163982972
+    },
+    {
+      "split": "Random matches",
+      "model": "Final model settings",
+      "features": "match state",
+      "test_matches_also_in_train": 0,
+      "test_matches": 237,
+      "rows": 27279,
+      "accuracy": 0.7757249166025147,
+      "log_loss": 0.4421520466613182,
+      "brier": 0.14761586418988837
+    },
+    {
+      "split": "Random matches",
+      "model": "Final model settings",
+      "features": "match state + team/city",
+      "test_matches_also_in_train": 0,
+      "test_matches": 237,
+      "rows": 27279,
+      "accuracy": 0.7754683089556069,
+      "log_loss": 0.4423731573062332,
+      "brier": 0.14661247569970104
+    },
+    {
+      "split": "Random rows (old notebook method)",
+      "model": "Old notebook Random Forest",
+      "features": "match state + team/city",
+      "test_matches_also_in_train": 1185,
+      "test_matches": 1185,
+      "rows": 27579,
+      "accuracy": 0.9572500815838138,
+      "log_loss": 0.2165931419898523,
+      "brier": 0.055486982741609035
+    }
+  ]
+}
