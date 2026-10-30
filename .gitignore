@@ -3,3 +3,6 @@ ml/.venv/
 ml/build/
 __pycache__/
 .pytest_cache/
+node_modules/
+dist/
+coverage/
